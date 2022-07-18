@@ -199,8 +199,6 @@ G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\Proyecto.Formularios.Modales.mdCom
 G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\Proyecto.Formularios.Modales.mdProductos.resources
 G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\Proyecto.Formularios.Modales.mdProveedores.resources
 G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\Proyecto.Formularios.Modales.mdVentaExitosa.resources
-G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\Proyecto.Formularios.Productos.frmCargaMasiva.resources
-G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\Proyecto.Formularios.Productos.frmGenerarBarras.resources
 G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\Proyecto.Formularios.Productos.frmMantProducto.resources
 G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\Proyecto.Formularios.Productos.frmProductos.resources
 G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\Proyecto.Formularios.Proveedores.frmMantProveedor.resources
