@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mdCompraExitosa));
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtnumerodocumento = new System.Windows.Forms.TextBox();
@@ -111,7 +110,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnaceptar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(260, 154);
             this.MinimumSize = new System.Drawing.Size(260, 154);
             this.Name = "mdCompraExitosa";

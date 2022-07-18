@@ -36,19 +36,5 @@ namespace Proyecto.Intermedios
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
-
-        private void btncargamasiva_Click(object sender, EventArgs e)
-        {
-            FormularioVista = new frmCargaMasiva();
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-        }
-
-        private void btngenerarbarras_Click(object sender, EventArgs e)
-        {
-            FormularioVista = new frmGenerarBarras();
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-        }
     }
 }

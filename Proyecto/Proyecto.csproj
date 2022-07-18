@@ -215,18 +215,6 @@
     <Compile Include="Formularios\Modales\mdVentaExitosa.Designer.cs">
       <DependentUpon>mdVentaExitosa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Productos\frmCargaMasiva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Productos\frmCargaMasiva.Designer.cs">
-      <DependentUpon>frmCargaMasiva.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Productos\frmGenerarBarras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Productos\frmGenerarBarras.Designer.cs">
-      <DependentUpon>frmGenerarBarras.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Productos\frmMantProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,7 +263,6 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Herramientas\ConvertirBitMap.cs" />
     <Compile Include="Herramientas\OpcionCombo.cs" />
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
@@ -342,8 +329,6 @@
     <None Include="Resources\logo.bmp" />
     <None Include="Resources\logo.ico" />
     <None Include="Resources\logo.png" />
-    <None Include="Resources\PlantillaVenta.html" />
-    <None Include="Resources\PlantillaCompra.html" />
     <None Include="Resources\delete17.png" />
     <None Include="Resources\check16.png" />
     <None Include="Resources\check20.png" />
@@ -392,12 +377,6 @@
     <EmbeddedResource Include="Formularios\Modales\mdVentaExitosa.resx">
       <DependentUpon>mdVentaExitosa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Productos\frmCargaMasiva.resx">
-      <DependentUpon>frmCargaMasiva.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Productos\frmGenerarBarras.resx">
-      <DependentUpon>frmGenerarBarras.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Productos\frmMantProducto.resx">
       <DependentUpon>frmMantProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -442,14 +421,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Content Include="DBVENTAS.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -458,21 +432,19 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\PlantillaProducto.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LogoCanal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\oie_transparent.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6">

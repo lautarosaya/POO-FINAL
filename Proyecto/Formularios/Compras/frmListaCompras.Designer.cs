@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListaCompras));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cbobuscar = new System.Windows.Forms.ComboBox();
             this.txtbuscar = new System.Windows.Forms.TextBox();
@@ -56,7 +55,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnexportar = new FontAwesome.Sharp.IconButton();
             this.btnborrar = new FontAwesome.Sharp.IconButton();
             this.btnbusqueda = new FontAwesome.Sharp.IconButton();
             this.btnsalir = new FontAwesome.Sharp.IconButton();
@@ -312,26 +310,6 @@
             this.label1.Size = new System.Drawing.Size(1096, 541);
             this.label1.TabIndex = 194;
             // 
-            // btnexportar
-            // 
-            this.btnexportar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnexportar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnexportar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnexportar.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
-            this.btnexportar.IconColor = System.Drawing.Color.LimeGreen;
-            this.btnexportar.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnexportar.IconSize = 17;
-            this.btnexportar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnexportar.Location = new System.Drawing.Point(26, 107);
-            this.btnexportar.Name = "btnexportar";
-            this.btnexportar.Size = new System.Drawing.Size(118, 21);
-            this.btnexportar.TabIndex = 208;
-            this.btnexportar.Text = "Descargar Excel";
-            this.btnexportar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnexportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnexportar.UseVisualStyleBackColor = false;
-            this.btnexportar.Click += new System.EventHandler(this.btnexportar_Click);
-            // 
             // btnborrar
             // 
             this.btnborrar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -409,7 +387,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Proyecto.Properties.Resources.LogoCanal;
+            this.pictureBox2.Image = global::Proyecto.Properties.Resources.logo;
             this.pictureBox2.Location = new System.Drawing.Point(935, 7);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(74, 69);
@@ -423,7 +401,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 590);
             this.ControlBox = false;
-            this.Controls.Add(this.btnexportar);
             this.Controls.Add(this.btnborrar);
             this.Controls.Add(this.btnbusqueda);
             this.Controls.Add(this.btnsalir);
@@ -441,7 +418,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1120, 629);
             this.MinimumSize = new System.Drawing.Size(1120, 629);
             this.Name = "frmListaCompras";
@@ -456,8 +432,6 @@
         }
 
         #endregion
-
-        private FontAwesome.Sharp.IconButton btnexportar;
         private FontAwesome.Sharp.IconButton btnborrar;
         private FontAwesome.Sharp.IconButton btnbusqueda;
         private FontAwesome.Sharp.IconButton btnsalir;

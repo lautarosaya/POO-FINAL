@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IMantenimiento));
             this.label1 = new System.Windows.Forms.Label();
             this.btncerrar = new FontAwesome.Sharp.IconButton();
             this.btnbuscarcompra = new FontAwesome.Sharp.IconButton();
@@ -133,7 +132,6 @@
             this.Controls.Add(this.btnnuevacompra);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(322, 314);
             this.MinimumSize = new System.Drawing.Size(322, 314);
             this.Name = "IMantenimiento";

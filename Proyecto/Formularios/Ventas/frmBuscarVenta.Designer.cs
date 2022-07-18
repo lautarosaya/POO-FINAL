@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBuscarVenta));
             this.label26 = new System.Windows.Forms.Label();
             this.txtbusqueda = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,7 +60,6 @@
             this.lblpagocon = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btndescargarpdf = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.btnborrar = new FontAwesome.Sharp.IconButton();
             this.btnbuscar = new FontAwesome.Sharp.IconButton();
@@ -345,7 +343,6 @@
             this.groupBox3.Controls.Add(this.lblpagocon);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.btndescargarpdf);
             this.groupBox3.Controls.Add(this.iconPictureBox1);
             this.groupBox3.Controls.Add(this.lbltotal);
             this.groupBox3.Controls.Add(this.label10);
@@ -404,25 +401,6 @@
             this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 197;
             this.label4.Text = "Cambio:";
-            // 
-            // btndescargarpdf
-            // 
-            this.btndescargarpdf.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndescargarpdf.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btndescargarpdf.IconColor = System.Drawing.Color.Red;
-            this.btndescargarpdf.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btndescargarpdf.IconSize = 18;
-            this.btndescargarpdf.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btndescargarpdf.Location = new System.Drawing.Point(499, 402);
-            this.btndescargarpdf.Name = "btndescargarpdf";
-            this.btndescargarpdf.Padding = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.btndescargarpdf.Size = new System.Drawing.Size(135, 28);
-            this.btndescargarpdf.TabIndex = 192;
-            this.btndescargarpdf.Text = "Descargar PDF";
-            this.btndescargarpdf.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btndescargarpdf.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btndescargarpdf.UseVisualStyleBackColor = true;
-            this.btndescargarpdf.Click += new System.EventHandler(this.btndescargarpdf_Click);
             // 
             // iconPictureBox1
             // 
@@ -511,7 +489,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(698, 588);
             this.MinimumSize = new System.Drawing.Size(698, 588);
             this.Name = "frmBuscarVenta";
@@ -555,7 +532,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtusuarioregistro;
         private System.Windows.Forms.Label label14;
-        private FontAwesome.Sharp.IconButton btndescargarpdf;
         private System.Windows.Forms.Label lbltotal;
         private System.Windows.Forms.Label lbltextototal;
         private System.Windows.Forms.GroupBox groupBox3;
