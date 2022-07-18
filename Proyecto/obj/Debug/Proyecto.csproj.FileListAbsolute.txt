@@ -291,3 +291,6 @@ C:\Users\agusp\Desktop\POO-FINAL\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileI
 C:\Users\agusp\Desktop\POO-FINAL\Proyecto\obj\Debug\Proyecto.csproj.CopyComplete
 C:\Users\agusp\Desktop\POO-FINAL\Proyecto\obj\Debug\SISTEMA DE VENTAS.exe
 C:\Users\agusp\Desktop\POO-FINAL\Proyecto\obj\Debug\SISTEMA DE VENTAS.pdb
+G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\vista.Login.CodigoConfirmacion.resources
+G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\vista.Login.Registro.resources
+G:\Proyecto\Sistemasventas\Proyecto\obj\Debug\vista.Ingreso.resources

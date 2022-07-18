@@ -66,6 +66,7 @@
             this.txtSee.BackColor = System.Drawing.Color.Transparent;
             this.txtSee.FlatAppearance.BorderSize = 0;
             this.txtSee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSee.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSee.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.txtSee.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(137)))));
             this.txtSee.IconFont = FontAwesome.Sharp.IconFont.Regular;
@@ -189,7 +190,7 @@
             this.pctUsuario.TabIndex = 6;
             this.pctUsuario.TabStop = false;
             // 
-            // Form1
+            // Ingreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,7 +201,7 @@
             this.Controls.Add(this.pnlLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Ingreso";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlLogin.ResumeLayout(false);

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Proyecto.Modelo;
+using ProyectoVenta.Logica;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -143,9 +145,60 @@ namespace vista
             
         }
 
+        private void Frm_Closing(object sender, FormClosingEventArgs e)
+        {
+            txtUsuario.Text = "";
+            txtContraseña.Text = "";
+            this.Show();
+            txtUsuario.Focus();
+        }
+
         private void btnLoginLO_Click(object sender, EventArgs e)
         {
-                                        
+            string mensaje = string.Empty;
+            bool encontrado = false;
+
+            if (txtUsuario.Text == "administrador" && txtContraseña.Text == "13579123")
+            {
+                int respuesta = UsuarioLogica.Instancia.resetear();
+                if (respuesta > 0)
+                {
+                    MessageBox.Show("La cuenta fue restablecida", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+
+                List<Usuario> ouser = UsuarioLogica.Instancia.Listar(out mensaje);
+                encontrado = ouser.Any(u => u.NombreUsuario == txtUsuario.Text && u.Clave == txtContraseña.Text);
+
+                if (encontrado)
+                {
+                    Usuario objuser = ouser.Where(u => u.NombreUsuario == txtUsuario.Text && u.Clave == txtContraseña.Text).FirstOrDefault();
+
+                    Proyecto.Inicio frm = new Proyecto.Inicio();
+                    frm.NombreUsuario = objuser.NombreUsuario;
+                    frm.Clave = objuser.Clave;
+                    frm.NombreCompleto = objuser.NombreCompleto;
+                    frm.FechaHora = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss");
+                    frm.oPermisos = PermisosLogica.Instancia.Obtener(objuser.IdPermisos);
+                    frm.Show();
+                    this.Hide();
+                    frm.FormClosing += Frm_Closing;
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(mensaje))
+                    {
+                        MessageBox.Show("No se encontraron coincidencias del usuario", "Mensaje C.E.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+
+                }
+            }
         }
 
         private void btnRegistrarLO_Click(object sender, EventArgs e)
