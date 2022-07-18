@@ -318,13 +318,13 @@ namespace vista
         //Eventos de FONTAWESOME
         private void txtSee_MouseEnter(object sender, EventArgs e)
         {
-            txtSee.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            txtSee.IconFont = FontAwesome.Sharp.IconFont.Auto;
             
         }
 
         private void txtSee_MouseLeave(object sender, EventArgs e)
         {          
-            txtSee.IconFont = FontAwesome.Sharp.IconFont.Regular;                      
+            txtSee.IconFont = FontAwesome.Sharp.IconFont.Auto;                      
         }
 
         private void txtSee_MouseClick(object sender, MouseEventArgs e)

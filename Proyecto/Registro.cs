@@ -10,18 +10,24 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
 using COMUN;
+using Proyecto.Herrarmientas;
+using Proyecto.Modelo;
+using ProyectoVenta.Logica;
+
 
 namespace vista.Login
 {
     public partial class Registro : Form
     {
-        //Developed by Javier Ramírez//
+        public bool _modo_editar { get; set; }
+        public Usuario _Usuario { get; set; }
+
         public Registro(Point a)
         {
             InitializeComponent();
             location = a;
         }
-        Point location,newlocation;
+        Point location, newlocation;
         char passwordchar;
         bool passwordEyeON = false;
         EventArgs v;
@@ -42,15 +48,15 @@ namespace vista.Login
         }
 
         private void txtUsuario_Enter(object sender, EventArgs e)
-        {           
-            placeholder(txtUsuario,1,Usuariotxt);
+        {
+            placeholder(txtUsuario, 1, Usuariotxt);
             pctLineDecoration(pctUsuario, 1);
 
         }
 
         private void txtUsuario_Leave(object sender, EventArgs e)
         {
-            placeholder(txtUsuario,2,Usuariotxt);
+            placeholder(txtUsuario, 2, Usuariotxt);
             pctLineDecoration(pctUsuario, 2);
         }
 
@@ -87,7 +93,7 @@ namespace vista.Login
                     passwordCHAR(3);
                 }
             }
-            if(txtContraseña.Text != "Contraseña" && txtContraseña.ForeColor != Color.Silver)
+            if (txtContraseña.Text != "Contraseña" && txtContraseña.ForeColor != Color.Silver)
             {
                 if (COMUN.MetodosComunes.ValidacionPASSWORD(txtContraseña.Text))
                 {
@@ -123,7 +129,7 @@ namespace vista.Login
             }
             pctLineDecoration(pctContraseña, 2);
         }
-            
+
         private void txtApellido_Enter(object sender, EventArgs e)
         {
             placeholder(txtApellido, 1, Apellidotxt);
@@ -144,13 +150,13 @@ namespace vista.Login
 
         private void txtNombre_Leave(object sender, EventArgs e)
         {
-            placeholder(txtNombre,2, Nombretxt);
+            placeholder(txtNombre, 2, Nombretxt);
             pctLineDecoration(pctNombre, 2);
         }
 
         private void txtMail_Enter(object sender, EventArgs e)
         {
-            placeholder(txtMail,1,Correotxt);
+            placeholder(txtMail, 1, Correotxt);
             pctLineDecoration(pctCorreo, 1);
         }
 
@@ -222,7 +228,6 @@ namespace vista.Login
 
         private void btnLoginLO_Click(object sender, EventArgs e)
         {
-            
             Controladora.usuarios1 controladora = new Controladora.usuarios1();
             //Envio de Mail, utilizando mail Corporativo de nuestra empresa//
             //Variables mail, nombre, apellido//
@@ -239,8 +244,8 @@ namespace vista.Login
                 string mail = txtMail.Text;
                 string usuario = txtUsuario.Text;
                 Random r = new Random();
-                int codigoVER = r.Next(10000, 99999);               
-                CodigoConfirmacion formConfirmacion = new CodigoConfirmacion(codigoVER,usuario,mail);
+                int codigoVER = r.Next(10000, 99999);
+                CodigoConfirmacion formConfirmacion = new CodigoConfirmacion(codigoVER, usuario, mail);
                 try
                 {
                     SmtpClient cliente = controladora.SmtpClient();
@@ -256,7 +261,7 @@ namespace vista.Login
                 }
                 formConfirmacion.ShowDialog();
                 //La función Confirmacion() sirve para saber si el usuario ingreso el codigo correcto
-                
+
                 if (formConfirmacion.Confirmacion())
                 {
                     try
@@ -265,6 +270,63 @@ namespace vista.Login
 
                         MailMessage correo = controladora.Mail_Registro(mail, nombre, apellido, usuario);
                         cliente.Send(correo);
+                        string mensaje = string.Empty;
+                        if (_Usuario != null)
+                        {
+                            _Usuario.NombreUsuario = txtUsuario.Text;
+                            _Usuario.NombreCompleto = txtNombre.Text;
+                            _Usuario.IdPermisos = 2;
+                            _Usuario.Descripcion = txtMail.Text;
+                            _Usuario.Clave = txtContraseña.Text;
+                        }
+                        else
+                            _Usuario = new Usuario()
+                            {
+                                IdUsuario = 0,
+                                NombreUsuario = txtUsuario.Text,
+                                NombreCompleto = txtNombre.Text,
+                                IdPermisos = 2,
+                                Descripcion = txtMail.Text,
+                                Clave = txtContraseña.Text
+                            };
+
+                        int existe = UsuarioLogica.Instancia.Existe(_Usuario.NombreUsuario, _Usuario.IdUsuario, out mensaje);
+                        if (existe > 0)
+                        {
+                            lblresultado.Text = mensaje;
+                            lblresultado.ForeColor = Color.Red;
+                            return;
+                        }
+
+                        if (!_modo_editar)
+                        {
+                            int idgenerado = UsuarioLogica.Instancia.Guardar(_Usuario, out mensaje);
+                            if (idgenerado > 0)
+                            {
+                                _Usuario.IdUsuario = idgenerado;
+                                this.DialogResult = DialogResult.OK;
+                            }
+                            else
+                            {
+                                lblresultado.Text = mensaje;
+                                lblresultado.ForeColor = Color.Red;
+                            }
+                        }
+                        else
+                        {
+                            int afectados = UsuarioLogica.Instancia.Editar(_Usuario, out mensaje);
+                            if (afectados > 0)
+                            {
+                                this.DialogResult = DialogResult.OK;
+                            }
+                            else
+                            {
+                                lblresultado.Text = mensaje;
+                                lblresultado.ForeColor = Color.Red;
+                            }
+
+                        }
+
                         this.Close();
                     }
                     catch (Exception ex)
@@ -279,7 +341,7 @@ namespace vista.Login
                 MessageBox.Show("Por favor, corregir los errores", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
-            
+
         }
         public void passwordCHAR(int caso)
         {
@@ -365,7 +427,7 @@ namespace vista.Login
         private void txtMail_TextChanged(object sender, EventArgs e)
         {
             v = e;
-            if(txtMail.Text != Correotxt && txtMail.ForeColor != Color.Silver)
+            if (txtMail.Text != Correotxt && txtMail.ForeColor != Color.Silver)
             {
                 if (COMUN.MetodosComunes.ValidacionEMAIL(e, txtMail.Text))
                 {
@@ -411,7 +473,7 @@ namespace vista.Login
                 Controladora.usuarios1 usuarios = new Controladora.usuarios1();
                 switch (usuarios.identificador(txtUsuario.Text, txtContraseña.Text))
                 {
-                    
+
                 }
             }
         }
@@ -419,11 +481,11 @@ namespace vista.Login
         public bool Revisar(TextBox a)
         {
             //Aquí para automatizar el programa, utilizamos los TabsIndex de nuestro TextBox//
-             //Entonces esto nos permite identificar cada TextBox//
+            //Entonces esto nos permite identificar cada TextBox//
             switch (a.TabIndex)
             {
                 case 0:
-                    if(a.Text != Nombretxt && a.ForeColor != Color.Silver)
+                    if (a.Text != Nombretxt && a.ForeColor != Color.Silver)
                     {
                         return true;
                     }
@@ -448,7 +510,7 @@ namespace vista.Login
                     if (a.Text != Usuariotxt && a.ForeColor != Color.Silver)
                     {
                         if (COMUN.MetodosComunes.ValidacionPASSWORD(a.Text))
-                        {                      
+                        {
                             return true;
                         }
                         else
@@ -485,10 +547,10 @@ namespace vista.Login
                 case 4:
                     if (a.Text != Correotxt && a.ForeColor != Color.Silver)
                     {
-                        
-                        if (COMUN.MetodosComunes.ValidacionEMAIL(v,a.Text))
+
+                        if (COMUN.MetodosComunes.ValidacionEMAIL(v, a.Text))
                         {
-                        return true;
+                            return true;
                         }
                         else
                         {
@@ -511,18 +573,3 @@ namespace vista.Login
         }
     }
 }
-/*
-try
-{
-    SmtpClient cliente = controladora.SmtpClient();
-
-    MailMessage correo = controladora.Mail_Registro(mail, nombre, apellido);
-
-    cliente.Send(correo);
-}
-catch (Exception ex)
-{
-    DialogResult dialog = MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-}
-*/

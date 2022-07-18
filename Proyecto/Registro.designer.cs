@@ -45,6 +45,7 @@
             this.btnRegistrarLO = new System.Windows.Forms.Button();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.txtSee = new FontAwesome.Sharp.IconButton();
+            this.lblresultado = new System.Windows.Forms.Label();
             this.pnlLogin.SuspendLayout();
             this.pnl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctNombre)).BeginInit();
@@ -68,6 +69,7 @@
             // 
             // pnl1
             // 
+            this.pnl1.Controls.Add(this.lblresultado);
             this.pnl1.Controls.Add(this.txtSee);
             this.pnl1.Controls.Add(this.lblBienvenido);
             this.pnl1.Controls.Add(this.btnRegistrar);
@@ -274,7 +276,7 @@
             this.txtSee.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(137)))));
             this.txtSee.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.txtSee.IconSize = 33;
-            this.txtSee.Location = new System.Drawing.Point(415, 120);
+            this.txtSee.Location = new System.Drawing.Point(415, 117);
             this.txtSee.Name = "txtSee";
             this.txtSee.Size = new System.Drawing.Size(24, 24);
             this.txtSee.TabIndex = 9;
@@ -283,6 +285,15 @@
             this.txtSee.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSee_MouseClick);
             this.txtSee.MouseEnter += new System.EventHandler(this.txtSee_MouseEnter);
             this.txtSee.MouseLeave += new System.EventHandler(this.txtSee_MouseLeave);
+            // 
+            // lblresultado
+            // 
+            this.lblresultado.AutoSize = true;
+            this.lblresultado.Location = new System.Drawing.Point(404, 9);
+            this.lblresultado.Name = "lblresultado";
+            this.lblresultado.Size = new System.Drawing.Size(0, 13);
+            this.lblresultado.TabIndex = 10;
+            this.lblresultado.Visible = false;
             // 
             // Registro
             // 
@@ -329,5 +340,6 @@
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.PictureBox pctCorreo;
         private FontAwesome.Sharp.IconButton txtSee;
+        private System.Windows.Forms.Label lblresultado;
     }
 }
