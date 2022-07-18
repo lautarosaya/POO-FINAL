@@ -63,20 +63,18 @@
             // 
             // txtSee
             // 
-            this.txtSee.BackColor = System.Drawing.Color.Transparent;
             this.txtSee.FlatAppearance.BorderSize = 0;
             this.txtSee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtSee.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSee.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.txtSee.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(137)))));
-            this.txtSee.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            this.txtSee.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.txtSee.IconSize = 33;
-            this.txtSee.Location = new System.Drawing.Point(337, 195);
+            this.txtSee.Location = new System.Drawing.Point(337, 194);
             this.txtSee.Name = "txtSee";
-            this.txtSee.Size = new System.Drawing.Size(24, 22);
+            this.txtSee.Size = new System.Drawing.Size(24, 24);
             this.txtSee.TabIndex = 1;
             this.txtSee.Tag = "Contraseña";
-            this.txtSee.UseVisualStyleBackColor = false;
+            this.txtSee.UseVisualStyleBackColor = true;
             this.txtSee.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSee_MouseClick);
             this.txtSee.MouseEnter += new System.EventHandler(this.txtSee_MouseEnter);
             this.txtSee.MouseLeave += new System.EventHandler(this.txtSee_MouseLeave);

@@ -30,7 +30,6 @@
         {
             this.pnlLogin = new System.Windows.Forms.Panel();
             this.pnl1 = new System.Windows.Forms.Panel();
-            this.txtSee = new FontAwesome.Sharp.IconButton();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -45,6 +44,7 @@
             this.pctContraseña = new System.Windows.Forms.PictureBox();
             this.btnRegistrarLO = new System.Windows.Forms.Button();
             this.btnIniciar = new System.Windows.Forms.Button();
+            this.txtSee = new FontAwesome.Sharp.IconButton();
             this.pnlLogin.SuspendLayout();
             this.pnl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctNombre)).BeginInit();
@@ -85,25 +85,6 @@
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(442, 265);
             this.pnl1.TabIndex = 7;
-            // 
-            // txtSee
-            // 
-            this.txtSee.BackColor = System.Drawing.Color.Transparent;
-            this.txtSee.FlatAppearance.BorderSize = 0;
-            this.txtSee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtSee.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.txtSee.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(137)))));
-            this.txtSee.IconFont = FontAwesome.Sharp.IconFont.Regular;
-            this.txtSee.IconSize = 33;
-            this.txtSee.Location = new System.Drawing.Point(415, 120);
-            this.txtSee.Name = "txtSee";
-            this.txtSee.Size = new System.Drawing.Size(24, 22);
-            this.txtSee.TabIndex = 8;
-            this.txtSee.Tag = "Contraseña";
-            this.txtSee.UseVisualStyleBackColor = false;
-            this.txtSee.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSee_MouseClick);
-            this.txtSee.MouseEnter += new System.EventHandler(this.txtSee_MouseEnter);
-            this.txtSee.MouseLeave += new System.EventHandler(this.txtSee_MouseLeave);
             // 
             // lblBienvenido
             // 
@@ -284,6 +265,24 @@
             this.btnIniciar.Text = "Iniciar Sesión";
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // txtSee
+            // 
+            this.txtSee.FlatAppearance.BorderSize = 0;
+            this.txtSee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSee.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.txtSee.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(137)))));
+            this.txtSee.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.txtSee.IconSize = 33;
+            this.txtSee.Location = new System.Drawing.Point(415, 120);
+            this.txtSee.Name = "txtSee";
+            this.txtSee.Size = new System.Drawing.Size(24, 24);
+            this.txtSee.TabIndex = 9;
+            this.txtSee.Tag = "Contraseña";
+            this.txtSee.UseVisualStyleBackColor = true;
+            this.txtSee.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSee_MouseClick);
+            this.txtSee.MouseEnter += new System.EventHandler(this.txtSee_MouseEnter);
+            this.txtSee.MouseLeave += new System.EventHandler(this.txtSee_MouseLeave);
             // 
             // Registro
             // 
