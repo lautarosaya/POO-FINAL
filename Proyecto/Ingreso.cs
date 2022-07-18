@@ -145,20 +145,7 @@ namespace vista
 
         private void btnLoginLO_Click(object sender, EventArgs e)
         {
-          Controladora.usuarios1 usuarios = new Controladora.usuarios1();
-
-            switch (usuarios.identificador(txtUsuario.Text, txtContraseña.Text))
-            {
-                case 1:
-                    vista.Interfaz_Administrador adminFORM = new vista.Interfaz_Administrador();
-                    this.Hide();
-                    adminFORM.ShowDialog();
-                    break;
-                
-                default:
-                    MessageBox.Show("Se ingreso el usuario o una contraseña incorrecta, por favor revisar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-            }                                 
+                                        
         }
 
         private void btnRegistrarLO_Click(object sender, EventArgs e)
@@ -312,19 +299,8 @@ namespace vista
         {
             if(e.KeyChar == Convert.ToChar(Keys.Enter))
             {
-                Controladora.usuarios1 usuarios = new Controladora.usuarios1();
-                switch (usuarios.identificador(txtUsuario.Text, txtContraseña.Text))
-                {
-                    case 1:
-                        vista.Interfaz_Administrador adminFORM = new vista.Interfaz_Administrador();
-                        this.Hide();
-                        adminFORM.ShowDialog();
-                        break;
-
-                    default:
-                        MessageBox.Show("Se ingreso el usuario o una contraseña incorrecta, por favor revisar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        break;
-                }
+                
+                
             }
         }
     }

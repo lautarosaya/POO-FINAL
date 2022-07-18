@@ -411,15 +411,7 @@ namespace vista.Login
                 Controladora.usuarios1 usuarios = new Controladora.usuarios1();
                 switch (usuarios.identificador(txtUsuario.Text, txtContraseña.Text))
                 {
-                    case 1:
-                        vista.Interfaz_Administrador adminFORM = new vista.Interfaz_Administrador();
-                        this.Hide();
-                        adminFORM.ShowDialog();
-                        break;
-
-                    default:
-                        MessageBox.Show("Se ingreso el usuario o una contraseña incorrecta, por favor revisar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        break;
+                    
                 }
             }
         }
