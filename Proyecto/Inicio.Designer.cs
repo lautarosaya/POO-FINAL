@@ -58,7 +58,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.DarkGreen;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Georgia", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
@@ -87,10 +87,10 @@
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripStatusLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.toolStripStatusLabel2.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel2.Margin = new System.Windows.Forms.Padding(6, 3, 0, 2);
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(101, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel2.Text = "Nombre Usuario:";
             // 
             // lblstatus1
@@ -103,10 +103,10 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.toolStripStatusLabel1.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel1.Margin = new System.Windows.Forms.Padding(30, 3, 0, 2);
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(125, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(145, 17);
             this.toolStripStatusLabel1.Text = "Fecha / Hora Ingreso:";
             // 
             // lblstatus2
@@ -182,7 +182,7 @@
             // 
             this.menuMantenimiento.BackColor = System.Drawing.Color.DarkGreen;
             this.menuMantenimiento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuMantenimiento.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuMantenimiento.ForeColor = System.Drawing.Color.White;
             this.menuMantenimiento.IconChar = FontAwesome.Sharp.IconChar.Tools;
             this.menuMantenimiento.IconColor = System.Drawing.Color.White;
@@ -201,7 +201,7 @@
             // 
             this.menuProveedores.BackColor = System.Drawing.Color.DarkGreen;
             this.menuProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuProveedores.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuProveedores.ForeColor = System.Drawing.Color.White;
             this.menuProveedores.IconChar = FontAwesome.Sharp.IconChar.ShippingFast;
             this.menuProveedores.IconColor = System.Drawing.Color.White;
@@ -220,7 +220,7 @@
             // 
             this.menuProductos.BackColor = System.Drawing.Color.DarkGreen;
             this.menuProductos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuProductos.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuProductos.ForeColor = System.Drawing.Color.White;
             this.menuProductos.IconChar = FontAwesome.Sharp.IconChar.Boxes;
             this.menuProductos.IconColor = System.Drawing.Color.White;
@@ -239,7 +239,7 @@
             // 
             this.menuClientes.BackColor = System.Drawing.Color.DarkGreen;
             this.menuClientes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuClientes.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuClientes.ForeColor = System.Drawing.Color.White;
             this.menuClientes.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.menuClientes.IconColor = System.Drawing.Color.White;
@@ -258,7 +258,7 @@
             // 
             this.menuCompras.BackColor = System.Drawing.Color.DarkGreen;
             this.menuCompras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuCompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuCompras.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuCompras.ForeColor = System.Drawing.Color.White;
             this.menuCompras.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
             this.menuCompras.IconColor = System.Drawing.Color.White;
@@ -277,7 +277,7 @@
             // 
             this.menuVentas.BackColor = System.Drawing.Color.DarkGreen;
             this.menuVentas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuVentas.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuVentas.ForeColor = System.Drawing.Color.White;
             this.menuVentas.IconChar = FontAwesome.Sharp.IconChar.Tags;
             this.menuVentas.IconColor = System.Drawing.Color.White;

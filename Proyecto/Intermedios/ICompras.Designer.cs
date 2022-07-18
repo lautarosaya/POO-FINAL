@@ -48,6 +48,7 @@
             // 
             this.btncerrar.BackColor = System.Drawing.Color.DarkGreen;
             this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncerrar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrar.ForeColor = System.Drawing.Color.White;
             this.btncerrar.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btncerrar.IconColor = System.Drawing.Color.White;
@@ -67,6 +68,7 @@
             // 
             this.btnbuscarcompra.BackColor = System.Drawing.Color.DarkGreen;
             this.btnbuscarcompra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscarcompra.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscarcompra.ForeColor = System.Drawing.Color.White;
             this.btnbuscarcompra.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.btnbuscarcompra.IconColor = System.Drawing.Color.White;
@@ -86,6 +88,7 @@
             // 
             this.btnlistacompras.BackColor = System.Drawing.Color.DarkGreen;
             this.btnlistacompras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlistacompras.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlistacompras.ForeColor = System.Drawing.Color.White;
             this.btnlistacompras.IconChar = FontAwesome.Sharp.IconChar.ClipboardList;
             this.btnlistacompras.IconColor = System.Drawing.Color.White;
@@ -105,6 +108,7 @@
             // 
             this.btnnuevacompra.BackColor = System.Drawing.Color.DarkGreen;
             this.btnnuevacompra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnnuevacompra.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnuevacompra.ForeColor = System.Drawing.Color.White;
             this.btnnuevacompra.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.btnnuevacompra.IconColor = System.Drawing.Color.White;

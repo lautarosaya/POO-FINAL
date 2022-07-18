@@ -45,6 +45,7 @@
             // 
             this.btncerrar.BackColor = System.Drawing.Color.DarkGreen;
             this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncerrar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrar.ForeColor = System.Drawing.Color.White;
             this.btncerrar.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btncerrar.IconColor = System.Drawing.Color.White;
@@ -64,6 +65,7 @@
             // 
             this.btnnuevaproducto.BackColor = System.Drawing.Color.DarkGreen;
             this.btnnuevaproducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnnuevaproducto.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnuevaproducto.ForeColor = System.Drawing.Color.White;
             this.btnnuevaproducto.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.btnnuevaproducto.IconColor = System.Drawing.Color.White;

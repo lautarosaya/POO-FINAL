@@ -43,35 +43,39 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.Highlight;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 46;
-            this.iconPictureBox1.Location = new System.Drawing.Point(13, 28);
+            this.iconPictureBox1.IconSize = 50;
+            this.iconPictureBox1.Location = new System.Drawing.Point(15, 30);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(46, 46);
+            this.iconPictureBox1.Size = new System.Drawing.Size(54, 50);
             this.iconPictureBox1.TabIndex = 80;
             this.iconPictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(65, 38);
+            this.label2.Location = new System.Drawing.Point(76, 41);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 13);
+            this.label2.Size = new System.Drawing.Size(197, 14);
             this.label2.TabIndex = 79;
             this.label2.Text = "Numero de documento generado:";
             // 
             // txtnumerodocumento
             // 
-            this.txtnumerodocumento.Location = new System.Drawing.Point(68, 54);
+            this.txtnumerodocumento.Location = new System.Drawing.Point(79, 58);
+            this.txtnumerodocumento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtnumerodocumento.Name = "txtnumerodocumento";
             this.txtnumerodocumento.ReadOnly = true;
-            this.txtnumerodocumento.Size = new System.Drawing.Size(163, 20);
+            this.txtnumerodocumento.Size = new System.Drawing.Size(190, 20);
             this.txtnumerodocumento.TabIndex = 78;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 11);
+            this.label1.Location = new System.Drawing.Point(76, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 15);
             this.label1.TabIndex = 77;
@@ -87,9 +91,10 @@
             this.btnaceptar.IconColor = System.Drawing.Color.Black;
             this.btnaceptar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnaceptar.IconSize = 20;
-            this.btnaceptar.Location = new System.Drawing.Point(148, 81);
+            this.btnaceptar.Location = new System.Drawing.Point(173, 87);
+            this.btnaceptar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnaceptar.Name = "btnaceptar";
-            this.btnaceptar.Size = new System.Drawing.Size(83, 23);
+            this.btnaceptar.Size = new System.Drawing.Size(97, 25);
             this.btnaceptar.TabIndex = 76;
             this.btnaceptar.Text = "Aceptar";
             this.btnaceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -99,19 +104,21 @@
             // 
             // mdVentaExitosa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(244, 115);
+            this.ClientSize = new System.Drawing.Size(285, 124);
             this.ControlBox = false;
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtnumerodocumento);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnaceptar);
+            this.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximumSize = new System.Drawing.Size(260, 154);
-            this.MinimumSize = new System.Drawing.Size(260, 154);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximumSize = new System.Drawing.Size(301, 163);
+            this.MinimumSize = new System.Drawing.Size(301, 163);
             this.Name = "mdVentaExitosa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Mensaje :.";
