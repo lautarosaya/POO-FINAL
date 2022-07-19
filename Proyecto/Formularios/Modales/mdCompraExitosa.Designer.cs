@@ -82,9 +82,9 @@
             this.btnaceptar.BackColor = System.Drawing.SystemColors.Control;
             this.btnaceptar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnaceptar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnaceptar.ForeColor = System.Drawing.Color.Black;
+            this.btnaceptar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnaceptar.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.btnaceptar.IconColor = System.Drawing.Color.Black;
+            this.btnaceptar.IconColor = System.Drawing.Color.LimeGreen;
             this.btnaceptar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnaceptar.IconSize = 20;
             this.btnaceptar.Location = new System.Drawing.Point(148, 81);

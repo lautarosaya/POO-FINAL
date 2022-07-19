@@ -87,7 +87,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.DarkGreen;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
@@ -134,7 +134,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.DarkGreen;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(395, 32);
             this.label10.Name = "label10";
@@ -161,7 +161,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.DarkGreen;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(395, 77);
             this.label11.Name = "label11";
@@ -172,7 +172,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.DarkGreen;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(152, 77);
             this.label14.Name = "label14";
@@ -213,7 +213,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.DarkGreen;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(149, 21);
@@ -224,7 +224,7 @@
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.DarkGreen;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.iconPictureBox1.BackgroundImage = global::Proyecto.Properties.Resources.logo3;
             this.iconPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -241,7 +241,7 @@
             // 
             // label9
             // 
-            this.label9.BackColor = System.Drawing.Color.DarkGreen;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.label9.Location = new System.Drawing.Point(8, 14);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(635, 94);
@@ -374,7 +374,7 @@
             // 
             this.btnborrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnborrar.IconChar = FontAwesome.Sharp.IconChar.Eraser;
-            this.btnborrar.IconColor = System.Drawing.Color.DarkGreen;
+            this.btnborrar.IconColor = System.Drawing.Color.Teal;
             this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnborrar.IconSize = 20;
             this.btnborrar.Location = new System.Drawing.Point(380, 57);
@@ -407,8 +407,9 @@
             // 
             // btnsalir
             // 
-            this.btnsalir.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsalir.FlatAppearance.BorderSize = 0;
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalir.ForeColor = System.Drawing.Color.White;

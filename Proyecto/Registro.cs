@@ -391,7 +391,7 @@ namespace vista.Login
 
         private void txtSee_MouseLeave(object sender, EventArgs e)
         {
-            txtSee.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            txtSee.IconFont = FontAwesome.Sharp.IconFont.Auto;
         }
 
         private void txtSee_MouseClick(object sender, MouseEventArgs e)
@@ -411,6 +411,7 @@ namespace vista.Login
                     passwordCHAR(7);
                 }
             }
+            SendKeys.Send("+{TAB}");
         }
 
         private void Registro_Load(object sender, EventArgs e)
@@ -470,11 +471,7 @@ namespace vista.Login
         {
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
-                Controladora.usuarios1 usuarios = new Controladora.usuarios1();
-                switch (usuarios.identificador(txtUsuario.Text, txtContraseña.Text))
-                {
-
-                }
+                btnLoginLO_Click(sender, e);
             }
         }
 

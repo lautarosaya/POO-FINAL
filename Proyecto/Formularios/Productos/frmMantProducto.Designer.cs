@@ -105,7 +105,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkGreen;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -148,7 +148,7 @@
             // 
             this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btncerrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(63)))), ((int)(((byte)(84)))));
+            this.btncerrar.IconColor = System.Drawing.Color.Red;
             this.btncerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncerrar.IconSize = 20;
             this.btncerrar.Location = new System.Drawing.Point(148, 254);
@@ -165,7 +165,7 @@
             // 
             this.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnguardar.IconChar = FontAwesome.Sharp.IconChar.Save;
-            this.btnguardar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(63)))), ((int)(((byte)(84)))));
+            this.btnguardar.IconColor = System.Drawing.Color.SteelBlue;
             this.btnguardar.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnguardar.IconSize = 17;
             this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;

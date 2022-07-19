@@ -87,6 +87,7 @@
             this.lblVerificar.Size = new System.Drawing.Size(282, 38);
             this.lblVerificar.TabIndex = 5;
             this.lblVerificar.Text = "Verificar su cuenta";
+            this.lblVerificar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlLabel_MouseDown);
             // 
             // panel1
             // 

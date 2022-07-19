@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -44,22 +45,17 @@
             this.menuClientes = new FontAwesome.Sharp.IconButton();
             this.menuCompras = new FontAwesome.Sharp.IconButton();
             this.menuVentas = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.tmerCLOCK = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkGreen;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Georgia", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
@@ -104,10 +100,10 @@
             // 
             this.toolStripStatusLabel1.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.toolStripStatusLabel1.Margin = new System.Windows.Forms.Padding(30, 3, 0, 2);
+            this.toolStripStatusLabel1.Margin = new System.Windows.Forms.Padding(60, 3, 0, 2);
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(125, 17);
-            this.toolStripStatusLabel1.Text = "Fecha / Hora Ingreso:";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(81, 17);
+            this.toolStripStatusLabel1.Text = "Fecha y Hora:";
             // 
             // lblstatus2
             // 
@@ -121,7 +117,7 @@
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.DarkGreen;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.iconPictureBox1.BackgroundImage = global::Proyecto.Properties.Resources.logo1;
             this.iconPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -138,7 +134,7 @@
             // 
             // btnInfo
             // 
-            this.btnInfo.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.btnInfo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInfo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -159,7 +155,7 @@
             // 
             // btnsalir
             // 
-            this.btnsalir.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsalir.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -180,7 +176,7 @@
             // 
             // menuMantenimiento
             // 
-            this.menuMantenimiento.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuMantenimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.menuMantenimiento.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuMantenimiento.ForeColor = System.Drawing.Color.White;
@@ -199,7 +195,7 @@
             // 
             // menuProveedores
             // 
-            this.menuProveedores.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.menuProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuProveedores.ForeColor = System.Drawing.Color.White;
@@ -218,7 +214,7 @@
             // 
             // menuProductos
             // 
-            this.menuProductos.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.menuProductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuProductos.ForeColor = System.Drawing.Color.White;
@@ -237,7 +233,7 @@
             // 
             // menuClientes
             // 
-            this.menuClientes.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.menuClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuClientes.ForeColor = System.Drawing.Color.White;
@@ -256,7 +252,7 @@
             // 
             // menuCompras
             // 
-            this.menuCompras.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.menuCompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuCompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuCompras.ForeColor = System.Drawing.Color.White;
@@ -275,7 +271,7 @@
             // 
             // menuVentas
             // 
-            this.menuVentas.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.menuVentas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuVentas.ForeColor = System.Drawing.Color.White;
@@ -292,35 +288,10 @@
             this.menuVentas.UseVisualStyleBackColor = false;
             this.menuVentas.Click += new System.EventHandler(this.menuVentas_Click);
             // 
-            // pictureBox1
+            // tmerCLOCK
             // 
-            this.pictureBox1.Image = global::Proyecto.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(463, 184);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(74, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Proyecto.Properties.Resources.logo;
-            this.pictureBox2.Location = new System.Drawing.Point(291, 184);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(74, 69);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Proyecto.Properties.Resources.logo;
-            this.pictureBox3.Location = new System.Drawing.Point(114, 344);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(74, 69);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
+            this.tmerCLOCK.Enabled = true;
+            this.tmerCLOCK.Tick += new System.EventHandler(this.tmerCLOCK_Tick);
             // 
             // Inicio
             // 
@@ -340,9 +311,6 @@
             this.Controls.Add(this.menuCompras);
             this.Controls.Add(this.menuVentas);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(681, 524);
@@ -354,9 +322,6 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,9 +344,7 @@
         private FontAwesome.Sharp.IconButton btnInfo;
         private FontAwesome.Sharp.IconButton btnsalir;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Timer tmerCLOCK;
     }
 }
 

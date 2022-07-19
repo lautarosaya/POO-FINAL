@@ -318,7 +318,7 @@ namespace vista
         //Eventos de FONTAWESOME
         private void txtSee_MouseEnter(object sender, EventArgs e)
         {
-            txtSee.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            txtSee.IconFont = FontAwesome.Sharp.IconFont.Solid;
             
         }
 
@@ -332,7 +332,7 @@ namespace vista
             if (txtSee.IconChar == FontAwesome.Sharp.IconChar.Eye)
             {
                 txtSee.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-                passwordEyeON = true;
+                passwordEyeON = true;               
                 passwordCHAR(6);
             }
             else
@@ -344,6 +344,7 @@ namespace vista
                     passwordCHAR(7);
                 }
             }
+            SendKeys.Send("+{TAB}");
 
 
         }
@@ -352,8 +353,7 @@ namespace vista
         {
             if(e.KeyChar == Convert.ToChar(Keys.Enter))
             {
-                
-                
+                btnLoginLO_Click(sender, e);           
             }
         }
     }

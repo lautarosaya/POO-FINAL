@@ -172,5 +172,12 @@ namespace Proyecto
             mdAcercaDe form = new mdAcercaDe();
             form.ShowDialog();
         }
+
+        private void tmerCLOCK_Tick(object sender, EventArgs e)
+        {
+            string datetime = DateTime.Now.ToString("dddd, dd MMMM yyyy hh:mm tt");
+
+            lblstatus2.Text = datetime;
+        }
     }
 }

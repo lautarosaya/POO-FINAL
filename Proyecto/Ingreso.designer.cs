@@ -72,8 +72,8 @@
             this.txtSee.Location = new System.Drawing.Point(337, 194);
             this.txtSee.Name = "txtSee";
             this.txtSee.Size = new System.Drawing.Size(24, 24);
-            this.txtSee.TabIndex = 1;
-            this.txtSee.Tag = "Contraseña";
+            this.txtSee.TabIndex = 2;
+            this.txtSee.Tag = "contraseña";
             this.txtSee.UseVisualStyleBackColor = true;
             this.txtSee.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSee_MouseClick);
             this.txtSee.MouseEnter += new System.EventHandler(this.txtSee_MouseEnter);
@@ -89,7 +89,7 @@
             this.btnRegistrarLO.Location = new System.Drawing.Point(0, 0);
             this.btnRegistrarLO.Name = "btnRegistrarLO";
             this.btnRegistrarLO.Size = new System.Drawing.Size(205, 60);
-            this.btnRegistrarLO.TabIndex = 3;
+            this.btnRegistrarLO.TabIndex = 6;
             this.btnRegistrarLO.Text = "Registrar";
             this.btnRegistrarLO.UseVisualStyleBackColor = true;
             this.btnRegistrarLO.Click += new System.EventHandler(this.btnRegistrarLO_Click);
@@ -117,7 +117,7 @@
             this.btnLoginLO.Location = new System.Drawing.Point(49, 244);
             this.btnLoginLO.Name = "btnLoginLO";
             this.btnLoginLO.Size = new System.Drawing.Size(312, 38);
-            this.btnLoginLO.TabIndex = 2;
+            this.btnLoginLO.TabIndex = 3;
             this.btnLoginLO.Text = "Ingresar";
             this.btnLoginLO.UseVisualStyleBackColor = false;
             this.btnLoginLO.Click += new System.EventHandler(this.btnLoginLO_Click);
@@ -147,7 +147,7 @@
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(312, 22);
             this.txtContraseña.TabIndex = 1;
-            this.txtContraseña.Tag = "Contraseña";
+            this.txtContraseña.Tag = "contraseña";
             this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);

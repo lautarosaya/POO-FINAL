@@ -86,7 +86,7 @@
             this.btnguardarcambios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnguardarcambios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnguardarcambios.IconChar = FontAwesome.Sharp.IconChar.Save;
-            this.btnguardarcambios.IconColor = System.Drawing.Color.Black;
+            this.btnguardarcambios.IconColor = System.Drawing.Color.SteelBlue;
             this.btnguardarcambios.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnguardarcambios.IconSize = 16;
             this.btnguardarcambios.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -121,7 +121,7 @@
             this.btnsubir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsubir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsubir.IconChar = FontAwesome.Sharp.IconChar.Upload;
-            this.btnsubir.IconColor = System.Drawing.Color.Black;
+            this.btnsubir.IconColor = System.Drawing.Color.Teal;
             this.btnsubir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnsubir.IconSize = 16;
             this.btnsubir.Location = new System.Drawing.Point(15, 171);
@@ -171,8 +171,9 @@
             // 
             // btnsalir
             // 
-            this.btnsalir.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsalir.FlatAppearance.BorderSize = 0;
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalir.ForeColor = System.Drawing.Color.White;
@@ -191,7 +192,7 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.DarkGreen;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;

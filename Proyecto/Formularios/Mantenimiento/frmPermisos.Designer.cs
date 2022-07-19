@@ -63,7 +63,7 @@
             // 
             this.btnguardarempleados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnguardarempleados.IconChar = FontAwesome.Sharp.IconChar.Save;
-            this.btnguardarempleados.IconColor = System.Drawing.Color.Black;
+            this.btnguardarempleados.IconColor = System.Drawing.Color.SteelBlue;
             this.btnguardarempleados.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnguardarempleados.IconSize = 17;
             this.btnguardarempleados.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -108,7 +108,7 @@
             // 
             this.btnguardaradministrador.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnguardaradministrador.IconChar = FontAwesome.Sharp.IconChar.Save;
-            this.btnguardaradministrador.IconColor = System.Drawing.Color.Black;
+            this.btnguardaradministrador.IconColor = System.Drawing.Color.SteelBlue;
             this.btnguardaradministrador.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnguardaradministrador.IconSize = 17;
             this.btnguardaradministrador.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -323,11 +323,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(218, 61);
+            this.label1.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(248, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 15);
+            this.label1.Size = new System.Drawing.Size(134, 15);
             this.label1.TabIndex = 169;
             this.label1.Text = "Permisos Empleado";
             // 
@@ -335,18 +335,19 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Teal;
-            this.label6.Location = new System.Drawing.Point(15, 61);
+            this.label6.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Green;
+            this.label6.Location = new System.Drawing.Point(31, 61);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(160, 15);
+            this.label6.Size = new System.Drawing.Size(168, 15);
             this.label6.TabIndex = 168;
             this.label6.Text = "Permisos Administrador";
             // 
             // btnsalir
             // 
-            this.btnsalir.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsalir.FlatAppearance.BorderSize = 0;
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalir.ForeColor = System.Drawing.Color.White;
@@ -365,7 +366,7 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.DarkGreen;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
