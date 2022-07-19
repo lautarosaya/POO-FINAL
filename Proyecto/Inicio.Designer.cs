@@ -56,7 +56,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkGreen;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Georgia", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -121,7 +121,7 @@
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.DarkGreen;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.iconPictureBox1.BackgroundImage = global::Proyecto.Properties.Resources.logo1;
             this.iconPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -138,7 +138,7 @@
             // 
             // btnInfo
             // 
-            this.btnInfo.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.btnInfo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInfo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -159,7 +159,7 @@
             // 
             // btnsalir
             // 
-            this.btnsalir.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsalir.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -180,7 +180,7 @@
             // 
             // menuMantenimiento
             // 
-            this.menuMantenimiento.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuMantenimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.menuMantenimiento.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuMantenimiento.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuMantenimiento.ForeColor = System.Drawing.Color.White;
@@ -199,7 +199,7 @@
             // 
             // menuProveedores
             // 
-            this.menuProveedores.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.menuProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuProveedores.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuProveedores.ForeColor = System.Drawing.Color.White;
@@ -218,7 +218,7 @@
             // 
             // menuProductos
             // 
-            this.menuProductos.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.menuProductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuProductos.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuProductos.ForeColor = System.Drawing.Color.White;
@@ -237,7 +237,7 @@
             // 
             // menuClientes
             // 
-            this.menuClientes.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.menuClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuClientes.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuClientes.ForeColor = System.Drawing.Color.White;
@@ -256,7 +256,7 @@
             // 
             // menuCompras
             // 
-            this.menuCompras.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.menuCompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuCompras.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuCompras.ForeColor = System.Drawing.Color.White;
@@ -275,7 +275,7 @@
             // 
             // menuVentas
             // 
-            this.menuVentas.BackColor = System.Drawing.Color.DarkGreen;
+            this.menuVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.menuVentas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuVentas.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuVentas.ForeColor = System.Drawing.Color.White;
