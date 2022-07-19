@@ -46,9 +46,15 @@
             // 
             // btncerrar
             // 
+<<<<<<< HEAD
             this.btncerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(107)))), ((int)(((byte)(78)))));
             this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+=======
+            this.btncerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncerrar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
             this.btncerrar.ForeColor = System.Drawing.Color.White;
             this.btncerrar.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btncerrar.IconColor = System.Drawing.Color.White;
@@ -66,9 +72,15 @@
             // 
             // btnbuscarcompra
             // 
+<<<<<<< HEAD
             this.btnbuscarcompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(107)))), ((int)(((byte)(78)))));
             this.btnbuscarcompra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnbuscarcompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+=======
+            this.btnbuscarcompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnbuscarcompra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscarcompra.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
             this.btnbuscarcompra.ForeColor = System.Drawing.Color.White;
             this.btnbuscarcompra.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.btnbuscarcompra.IconColor = System.Drawing.Color.White;
@@ -86,9 +98,15 @@
             // 
             // btnlistacompras
             // 
+<<<<<<< HEAD
             this.btnlistacompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(107)))), ((int)(((byte)(78)))));
             this.btnlistacompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnlistacompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+=======
+            this.btnlistacompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnlistacompras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlistacompras.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
             this.btnlistacompras.ForeColor = System.Drawing.Color.White;
             this.btnlistacompras.IconChar = FontAwesome.Sharp.IconChar.ClipboardList;
             this.btnlistacompras.IconColor = System.Drawing.Color.White;
@@ -106,9 +124,15 @@
             // 
             // btnnuevacompra
             // 
+<<<<<<< HEAD
             this.btnnuevacompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(107)))), ((int)(((byte)(78)))));
             this.btnnuevacompra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnnuevacompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+=======
+            this.btnnuevacompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnnuevacompra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnnuevacompra.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
             this.btnnuevacompra.ForeColor = System.Drawing.Color.White;
             this.btnnuevacompra.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.btnnuevacompra.IconColor = System.Drawing.Color.White;

@@ -45,8 +45,12 @@
             // 
             this.btncerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(107)))), ((int)(((byte)(78)))));
             this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.btncerrar.FlatAppearance.BorderSize = 0;
             this.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+=======
+            this.btncerrar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
             this.btncerrar.ForeColor = System.Drawing.Color.White;
             this.btncerrar.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.btncerrar.IconColor = System.Drawing.Color.White;
@@ -66,8 +70,12 @@
             // 
             this.btnnuevaproducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(107)))), ((int)(((byte)(78)))));
             this.btnnuevaproducto.Cursor = System.Windows.Forms.Cursors.Hand;
+<<<<<<< HEAD
             this.btnnuevaproducto.FlatAppearance.BorderSize = 0;
             this.btnnuevaproducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+=======
+            this.btnnuevaproducto.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
             this.btnnuevaproducto.ForeColor = System.Drawing.Color.White;
             this.btnnuevaproducto.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.btnnuevaproducto.IconColor = System.Drawing.Color.White;
