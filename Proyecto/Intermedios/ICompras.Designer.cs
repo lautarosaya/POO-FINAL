@@ -46,7 +46,7 @@
             // 
             // btncerrar
             // 
-            this.btncerrar.BackColor = System.Drawing.Color.DarkGreen;
+            this.btncerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncerrar.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrar.ForeColor = System.Drawing.Color.White;
@@ -66,7 +66,7 @@
             // 
             // btnbuscarcompra
             // 
-            this.btnbuscarcompra.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnbuscarcompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.btnbuscarcompra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnbuscarcompra.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscarcompra.ForeColor = System.Drawing.Color.White;
@@ -86,7 +86,7 @@
             // 
             // btnlistacompras
             // 
-            this.btnlistacompras.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnlistacompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.btnlistacompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnlistacompras.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlistacompras.ForeColor = System.Drawing.Color.White;
@@ -106,7 +106,7 @@
             // 
             // btnnuevacompra
             // 
-            this.btnnuevacompra.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnnuevacompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.btnnuevacompra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnnuevacompra.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnuevacompra.ForeColor = System.Drawing.Color.White;
