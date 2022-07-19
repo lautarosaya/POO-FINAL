@@ -48,11 +48,11 @@
             // 
             // btnsalir
             // 
-<<<<<<< HEAD
+
             this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
-=======
+
             this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
->>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
+
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsalir.FlatAppearance.BorderSize = 0;
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -93,11 +93,11 @@
             // 
             // label2
             // 
-<<<<<<< HEAD
+
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
-=======
+
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
->>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
+
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;

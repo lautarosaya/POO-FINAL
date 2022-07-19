@@ -108,5 +108,15 @@ namespace Proyecto.Formularios.Ventas
         {
 
         }
+
+        private void txtfecharegistro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusuarioregistro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

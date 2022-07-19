@@ -38,7 +38,6 @@
             this.e_mantenimiento = new System.Windows.Forms.CheckBox();
             this.e_proveedores = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.a_mantenimiento = new System.Windows.Forms.CheckBox();
             this.a_proveedores = new System.Windows.Forms.CheckBox();
             this.a_clientes = new System.Windows.Forms.CheckBox();
             this.e_clientes = new System.Windows.Forms.CheckBox();
@@ -183,22 +182,10 @@
             this.groupBox2.TabIndex = 143;
             this.groupBox2.TabStop = false;
             // 
-            // a_mantenimiento
-            // 
-            this.a_mantenimiento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.a_mantenimiento.Location = new System.Drawing.Point(23, 159);
-            this.a_mantenimiento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.a_mantenimiento.Name = "a_mantenimiento";
-            this.a_mantenimiento.Size = new System.Drawing.Size(170, 26);
-            this.a_mantenimiento.TabIndex = 12;
-            this.a_mantenimiento.Text = "Mantenimiento";
-            this.a_mantenimiento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.a_mantenimiento.UseVisualStyleBackColor = true;
-            // 
             // a_proveedores
             // 
             this.a_proveedores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.a_proveedores.Location = new System.Drawing.Point(23, 137);
+            this.a_proveedores.Location = new System.Drawing.Point(23, 150);
             this.a_proveedores.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.a_proveedores.Name = "a_proveedores";
             this.a_proveedores.Size = new System.Drawing.Size(170, 26);
@@ -210,7 +197,7 @@
             // a_clientes
             // 
             this.a_clientes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.a_clientes.Location = new System.Drawing.Point(23, 114);
+            this.a_clientes.Location = new System.Drawing.Point(23, 128);
             this.a_clientes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.a_clientes.Name = "a_clientes";
             this.a_clientes.Size = new System.Drawing.Size(170, 26);
@@ -258,7 +245,7 @@
             // a_productos
             // 
             this.a_productos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.a_productos.Location = new System.Drawing.Point(23, 92);
+            this.a_productos.Location = new System.Drawing.Point(23, 105);
             this.a_productos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.a_productos.Name = "a_productos";
             this.a_productos.Size = new System.Drawing.Size(170, 26);
@@ -270,7 +257,7 @@
             // a_compras
             // 
             this.a_compras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.a_compras.Location = new System.Drawing.Point(23, 69);
+            this.a_compras.Location = new System.Drawing.Point(23, 83);
             this.a_compras.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.a_compras.Name = "a_compras";
             this.a_compras.Size = new System.Drawing.Size(170, 26);
@@ -282,7 +269,7 @@
             // a_ventas
             // 
             this.a_ventas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.a_ventas.Location = new System.Drawing.Point(23, 47);
+            this.a_ventas.Location = new System.Drawing.Point(23, 60);
             this.a_ventas.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.a_ventas.Name = "a_ventas";
             this.a_ventas.Size = new System.Drawing.Size(170, 26);
@@ -331,7 +318,6 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.a_mantenimiento);
             this.groupBox1.Controls.Add(this.a_proveedores);
             this.groupBox1.Controls.Add(this.a_clientes);
             this.groupBox1.Controls.Add(this.a_productos);
@@ -349,16 +335,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.label1.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(248, 61);
-=======
             this.label1.Font = new System.Drawing.Font("Georgia", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(254, 66);
+            this.label1.Location = new System.Drawing.Point(302, 67);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
->>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 15);
             this.label1.TabIndex = 169;
@@ -368,16 +348,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.label6.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Green;
-            this.label6.Location = new System.Drawing.Point(31, 61);
-=======
             this.label6.Font = new System.Drawing.Font("Georgia", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Teal;
-            this.label6.Location = new System.Drawing.Point(18, 66);
+            this.label6.Location = new System.Drawing.Point(41, 67);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
->>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(168, 15);
             this.label6.TabIndex = 168;
@@ -385,11 +359,7 @@
             // 
             // btnsalir
             // 
-<<<<<<< HEAD
-            this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
-=======
             this.btnsalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
->>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsalir.FlatAppearance.BorderSize = 0;
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -411,11 +381,7 @@
             // 
             // label3
             // 
-<<<<<<< HEAD
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
-=======
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
->>>>>>> 50b76aa3203047a73b6815ae331d10802c2b000b
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
@@ -484,7 +450,6 @@
         private System.Windows.Forms.CheckBox e_mantenimiento;
         private System.Windows.Forms.CheckBox e_proveedores;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox a_mantenimiento;
         private System.Windows.Forms.CheckBox a_proveedores;
         private System.Windows.Forms.CheckBox a_clientes;
         private System.Windows.Forms.CheckBox e_clientes;

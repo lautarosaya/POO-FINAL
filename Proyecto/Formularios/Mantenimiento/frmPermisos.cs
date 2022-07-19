@@ -33,7 +33,6 @@ namespace Proyecto.Formularios.Mantenimiento
             a_productos.Checked = padmin.Productos == 1 ? true : false;
             a_clientes.Checked = padmin.Clientes == 1 ? true : false;
             a_proveedores.Checked = padmin.Proveedores == 1 ? true : false;
-            a_mantenimiento.Checked = padmin.Mantenimiento == 1 ? true : false;
 
             e_ventas.Checked = pemple.Ventas == 1 ? true : false;
             e_compras.Checked = pemple.Compras == 1 ? true : false;
@@ -66,9 +65,6 @@ namespace Proyecto.Formularios.Mantenimiento
 
             if (a_proveedores.Checked)
                 _a_proveedores = 1;
-            
-            if (a_mantenimiento.Checked)
-                _a_mantenimiento = 1;
 
 
             string mensaje = string.Empty;

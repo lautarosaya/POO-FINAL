@@ -268,12 +268,6 @@
     <Compile Include="Formularios\Ventas\frmNuevaVenta.Designer.cs">
       <DependentUpon>frmNuevaVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Herramientas\OpcionCombo.cs" />
     <Compile Include="Ingreso.cs">
       <SubType>Form</SubType>
@@ -430,9 +424,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Ventas\frmNuevaVenta.resx">
       <DependentUpon>frmNuevaVenta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ingreso.resx">
       <DependentUpon>Ingreso.cs</DependentUpon>
