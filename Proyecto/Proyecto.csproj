@@ -342,7 +342,6 @@
     <Compile Include="Registro.designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
-    <Content Include="blogg.ico" />
     <Content Include="iconshop.ico" />
     <Content Include="logo.ico" />
     <EmbeddedResource Include="CodigoConfirmacion.resx">

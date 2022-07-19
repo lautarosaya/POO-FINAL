@@ -241,7 +241,7 @@
             this.menuClientes.IconColor = System.Drawing.Color.White;
             this.menuClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.menuClientes.IconSize = 80;
-            this.menuClientes.Location = new System.Drawing.Point(95, 322);
+            this.menuClientes.Location = new System.Drawing.Point(270, 162);
             this.menuClientes.Name = "menuClientes";
             this.menuClientes.Size = new System.Drawing.Size(119, 108);
             this.menuClientes.TabIndex = 7;
@@ -260,7 +260,7 @@
             this.menuCompras.IconColor = System.Drawing.Color.White;
             this.menuCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.menuCompras.IconSize = 80;
-            this.menuCompras.Location = new System.Drawing.Point(270, 162);
+            this.menuCompras.Location = new System.Drawing.Point(95, 322);
             this.menuCompras.Name = "menuCompras";
             this.menuCompras.Size = new System.Drawing.Size(119, 108);
             this.menuCompras.TabIndex = 6;

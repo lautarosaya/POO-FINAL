@@ -33,23 +33,26 @@ namespace Proyecto
             {
                 menuVentas.Enabled = false;
                 menuVentas.Cursor = Cursors.No;
+                menuVentas.Hide();
             }
             if (oPermisos.Compras == 0)
             {
                 menuCompras.Enabled = false;
                 menuCompras.Cursor = Cursors.No;
+                menuCompras.Hide();
                 
             }
             if (oPermisos.Productos == 0)
             {
                 menuProductos.Enabled = false;
                 menuProductos.Cursor = Cursors.No;
+                menuProductos.Hide();
             }
             if (oPermisos.Clientes == 0)
             {
                 menuClientes.Enabled = false;
                 menuClientes.Cursor = Cursors.No;
-                menuClientes.Visible = false;
+                menuClientes.Hide();
             }
             if (oPermisos.Proveedores == 0)
             {
