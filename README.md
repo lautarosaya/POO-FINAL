@@ -53,5 +53,11 @@ $ cd PuntoVentaPortable
 :: Vista Previa ::
 </h3>
 <p align="center">
-<img src=".imgs/wf.gif"/>
+<img src="https://github.com/lautarosaya/POO-FINAL/blob/master/banner/1.png"/>
+</p>
+<p align="center">
+<img src="https://github.com/lautarosaya/POO-FINAL/blob/master/banner/2.png"/>
+</p>
+<p align="center">
+<img src="https://github.com/lautarosaya/POO-FINAL/blob/master/banner/3.pgn.png"/>
 </p>
