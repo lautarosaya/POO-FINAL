@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label26 = new System.Windows.Forms.Label();
             this.txtbusqueda = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,11 +41,17 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblcambio = new System.Windows.Forms.Label();
             this.dgvdata = new System.Windows.Forms.DataGridView();
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblpagocon = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbltextototal = new System.Windows.Forms.Label();
+            this.lbltotal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtnombrecliente = new System.Windows.Forms.TextBox();
             this.txtdoccliente = new System.Windows.Forms.TextBox();
@@ -53,17 +59,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txtusuarioregistro = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.lbltotal = new System.Windows.Forms.Label();
-            this.lbltextototal = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblcambio = new System.Windows.Forms.Label();
-            this.lblpagocon = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.btnborrar = new FontAwesome.Sharp.IconButton();
             this.btnbuscar = new FontAwesome.Sharp.IconButton();
             this.btnsalir = new FontAwesome.Sharp.IconButton();
+            this.btndescargarpdf = new FontAwesome.Sharp.IconButton();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -117,6 +118,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(784, 538);
             this.label1.TabIndex = 176;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label12
             // 
@@ -201,19 +203,31 @@
             this.groupBox2.TabIndex = 189;
             this.groupBox2.TabStop = false;
             // 
+            // lblcambio
+            // 
+            this.lblcambio.AutoSize = true;
+            this.lblcambio.BackColor = System.Drawing.Color.White;
+            this.lblcambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcambio.Location = new System.Drawing.Point(285, 216);
+            this.lblcambio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblcambio.Name = "lblcambio";
+            this.lblcambio.Size = new System.Drawing.Size(35, 15);
+            this.lblcambio.TabIndex = 200;
+            this.lblcambio.Text = "0.00";
+            // 
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
             this.dgvdata.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Producto,
@@ -225,9 +239,9 @@
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Transparent;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Transparent;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvdata.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.dgvdata.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowTemplate.Height = 24;
@@ -269,6 +283,62 @@
             this.SubTotal.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.SubTotal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.SubTotal.Width = 80;
+            // 
+            // lblpagocon
+            // 
+            this.lblpagocon.AutoSize = true;
+            this.lblpagocon.BackColor = System.Drawing.Color.White;
+            this.lblpagocon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpagocon.Location = new System.Drawing.Point(173, 216);
+            this.lblpagocon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblpagocon.Name = "lblpagocon";
+            this.lblpagocon.Size = new System.Drawing.Size(35, 15);
+            this.lblpagocon.TabIndex = 199;
+            this.lblpagocon.Text = "0.00";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(237, 218);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 14);
+            this.label4.TabIndex = 197;
+            this.label4.Text = "Cambio:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(114, 218);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 14);
+            this.label3.TabIndex = 198;
+            this.label3.Text = "Paga con:";
+            // 
+            // lbltextototal
+            // 
+            this.lbltextototal.AutoSize = true;
+            this.lbltextototal.BackColor = System.Drawing.Color.White;
+            this.lbltextototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltextototal.Location = new System.Drawing.Point(8, 216);
+            this.lbltextototal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltextototal.Name = "lbltextototal";
+            this.lbltextototal.Size = new System.Drawing.Size(43, 15);
+            this.lbltextototal.TabIndex = 193;
+            this.lbltextototal.Text = "Total:";
+            // 
+            // lbltotal
+            // 
+            this.lbltotal.AutoSize = true;
+            this.lbltotal.BackColor = System.Drawing.Color.White;
+            this.lbltotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotal.Location = new System.Drawing.Point(57, 216);
+            this.lbltotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltotal.Name = "lbltotal";
+            this.lbltotal.Size = new System.Drawing.Size(35, 15);
+            this.lbltotal.TabIndex = 194;
+            this.lbltotal.Text = "0.00";
             // 
             // groupBox1
             // 
@@ -343,33 +413,10 @@
             this.label14.TabIndex = 190;
             this.label14.Text = "Usuario Registro:";
             // 
-            // lbltotal
-            // 
-            this.lbltotal.AutoSize = true;
-            this.lbltotal.BackColor = System.Drawing.Color.White;
-            this.lbltotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotal.Location = new System.Drawing.Point(57, 216);
-            this.lbltotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbltotal.Name = "lbltotal";
-            this.lbltotal.Size = new System.Drawing.Size(35, 15);
-            this.lbltotal.TabIndex = 194;
-            this.lbltotal.Text = "0.00";
-            // 
-            // lbltextototal
-            // 
-            this.lbltextototal.AutoSize = true;
-            this.lbltextototal.BackColor = System.Drawing.Color.White;
-            this.lbltextototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltextototal.Location = new System.Drawing.Point(8, 216);
-            this.lbltextototal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbltextototal.Name = "lbltextototal";
-            this.lbltextototal.Size = new System.Drawing.Size(43, 15);
-            this.lbltextototal.TabIndex = 193;
-            this.lbltextototal.Text = "Total:";
-            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
+            this.groupBox3.Controls.Add(this.btndescargarpdf);
             this.groupBox3.Controls.Add(this.iconPictureBox1);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.txtnumerodocumento);
@@ -385,53 +432,9 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox3.Size = new System.Drawing.Size(765, 442);
+            this.groupBox3.Size = new System.Drawing.Size(765, 469);
             this.groupBox3.TabIndex = 195;
             this.groupBox3.TabStop = false;
-            // 
-            // lblcambio
-            // 
-            this.lblcambio.AutoSize = true;
-            this.lblcambio.BackColor = System.Drawing.Color.White;
-            this.lblcambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcambio.Location = new System.Drawing.Point(285, 216);
-            this.lblcambio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblcambio.Name = "lblcambio";
-            this.lblcambio.Size = new System.Drawing.Size(35, 15);
-            this.lblcambio.TabIndex = 200;
-            this.lblcambio.Text = "0.00";
-            // 
-            // lblpagocon
-            // 
-            this.lblpagocon.AutoSize = true;
-            this.lblpagocon.BackColor = System.Drawing.Color.White;
-            this.lblpagocon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpagocon.Location = new System.Drawing.Point(173, 216);
-            this.lblpagocon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblpagocon.Name = "lblpagocon";
-            this.lblpagocon.Size = new System.Drawing.Size(35, 15);
-            this.lblpagocon.TabIndex = 199;
-            this.lblpagocon.Text = "0.00";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(114, 218);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 14);
-            this.label3.TabIndex = 198;
-            this.label3.Text = "Paga con:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(237, 218);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 14);
-            this.label4.TabIndex = 197;
-            this.label4.Text = "Cambio:";
             // 
             // iconPictureBox1
             // 
@@ -510,6 +513,25 @@
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
+            // btndescargarpdf
+            // 
+            this.btndescargarpdf.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndescargarpdf.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btndescargarpdf.IconColor = System.Drawing.Color.Red;
+            this.btndescargarpdf.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btndescargarpdf.IconSize = 18;
+            this.btndescargarpdf.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btndescargarpdf.Location = new System.Drawing.Point(605, 432);
+            this.btndescargarpdf.Name = "btndescargarpdf";
+            this.btndescargarpdf.Padding = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.btndescargarpdf.Size = new System.Drawing.Size(135, 28);
+            this.btndescargarpdf.TabIndex = 193;
+            this.btndescargarpdf.Text = "Descargar PDF";
+            this.btndescargarpdf.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btndescargarpdf.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btndescargarpdf.UseVisualStyleBackColor = true;
+            this.btndescargarpdf.Click += new System.EventHandler(this.btndescargarpdf_Click);
+            // 
             // frmBuscarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -582,5 +604,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
+        private FontAwesome.Sharp.IconButton btndescargarpdf;
     }
 }

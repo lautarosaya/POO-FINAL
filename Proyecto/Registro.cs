@@ -277,7 +277,7 @@ namespace vista.Login
                             _Usuario.NombreCompleto = txtNombre.Text;
                             _Usuario.IdPermisos = 2;
                             _Usuario.Descripcion = txtMail.Text;
-                            _Usuario.Clave = txtContraseña.Text;
+                            _Usuario.Clave = MetodosComunes.Encriptar(txtContraseña.Text);
                         }
                         else
                             _Usuario = new Usuario()
@@ -287,7 +287,7 @@ namespace vista.Login
                                 NombreCompleto = txtNombre.Text,
                                 IdPermisos = 2,
                                 Descripcion = txtMail.Text,
-                                Clave = txtContraseña.Text
+                                Clave = MetodosComunes.Encriptar(txtContraseña.Text)
                             };
 
                         int existe = UsuarioLogica.Instancia.Existe(_Usuario.NombreUsuario, _Usuario.IdUsuario, out mensaje);

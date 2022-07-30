@@ -190,7 +190,7 @@ namespace COMUN
 
             return passEncriptado = sb.ToString();
         }
-
+        
         /// Encripta una cadena
         public static string EncriptarPassBD(string cadenaAencriptar)
         {
