@@ -2,13 +2,6 @@
 using Proyecto.Formularios.Proveedores;
 using Proyecto.Intermedios;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto
@@ -40,7 +33,7 @@ namespace Proyecto
                 menuCompras.Enabled = false;
                 menuCompras.Cursor = Cursors.No;
                 menuCompras.Hide();
-                
+
             }
             if (oPermisos.Productos == 0)
             {
@@ -60,7 +53,7 @@ namespace Proyecto
                 menuProveedores.Cursor = Cursors.No;
                 menuProveedores.Hide();
             }
-            
+
             if (oPermisos.Mantenimiento == 0)
             {
                 menuMantenimiento.Enabled = false;
@@ -77,7 +70,7 @@ namespace Proyecto
         {
             using (var Iform = new IVentas())
             {
-               
+
                 Iform._NombreUsuario = NombreUsuario;
                 var result = Iform.ShowDialog();
                 if (result == DialogResult.OK)

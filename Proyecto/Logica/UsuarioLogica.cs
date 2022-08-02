@@ -2,9 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ProyectoVenta.Logica
 {
@@ -42,7 +40,7 @@ namespace ProyectoVenta.Logica
                     respuesta = cmd.ExecuteNonQuery();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 respuesta = 0;
             }
@@ -60,7 +58,7 @@ namespace ProyectoVenta.Logica
             {
                 using (SQLiteConnection conexion = new SQLiteConnection(Conexion.cadena))
                 {
-                    
+
 
                     conexion.Open();
                     StringBuilder query = new StringBuilder();
@@ -214,7 +212,7 @@ namespace ProyectoVenta.Logica
                     respuesta = cmd.ExecuteNonQuery();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 respuesta = 0;
             }

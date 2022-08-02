@@ -1,10 +1,7 @@
 ﻿using Proyecto.Modelo;
 using System;
-using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ProyectoVenta.Logica
 {
@@ -28,7 +25,7 @@ namespace ProyectoVenta.Logica
             }
         }
 
-   
+
 
         public Datos Obtener()
         {
@@ -57,7 +54,7 @@ namespace ProyectoVenta.Logica
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 obj = new Datos();
             }
@@ -164,7 +161,7 @@ namespace ProyectoVenta.Logica
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 obtenido = false;
                 obj = new byte[0];

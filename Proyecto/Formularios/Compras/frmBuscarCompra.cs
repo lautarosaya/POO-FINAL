@@ -5,13 +5,7 @@ using Proyecto.Modelo;
 using ProyectoVenta.Logica;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto.Formularios.Compras
@@ -38,7 +32,8 @@ namespace Proyecto.Formularios.Compras
             buscarcompra();
         }
 
-        private void buscarcompra() {
+        private void buscarcompra()
+        {
             if (txtbusqueda.Text.Trim() == "")
             {
                 MessageBox.Show("Ingrese el numero de documento", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -72,9 +67,9 @@ namespace Proyecto.Formularios.Compras
             }
         }
 
-        private void limpiar(bool busqueda=false)
+        private void limpiar(bool busqueda = false)
         {
-            if(busqueda)
+            if (busqueda)
                 txtbusqueda.Text = "";
 
             txtnumerodocumento.Text = "";

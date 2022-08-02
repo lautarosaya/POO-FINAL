@@ -283,6 +283,7 @@
     <Compile Include="Formularios\Ventas\frmNuevaVenta.Designer.cs">
       <DependentUpon>frmNuevaVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Herramientas\OpcionCombo.cs" />
     <Compile Include="Ingreso.cs">
       <SubType>Form</SubType>
@@ -365,6 +366,9 @@
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="Proyecto_TemporaryKey.pfx" />
     <None Include="Resources\logo.bmp" />
     <None Include="Resources\logo.ico" />
@@ -377,6 +381,7 @@
     <None Include="Resources\delete16.png" />
     <EmbeddedResource Include="Formularios\Clientes\frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Clientes\frmMantCliente.resx">
       <DependentUpon>frmMantCliente.cs</DependentUpon>
@@ -389,6 +394,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Compras\frmNuevaCompra.resx">
       <DependentUpon>frmNuevaCompra.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Mantenimiento\frmNegocio.resx">
       <DependentUpon>frmNegocio.cs</DependentUpon>

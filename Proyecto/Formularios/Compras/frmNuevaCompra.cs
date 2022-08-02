@@ -3,13 +3,10 @@ using Proyecto.Modelo;
 using ProyectoVenta.Logica;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto.Formularios.Compras
@@ -49,10 +46,11 @@ namespace Proyecto.Formularios.Compras
                     txtnombreproveedor.Text = objeto.NombreCompleto;
                     txtcodproducto.Select();
                 }
-                else {
+                else
+                {
                     txtdocproveedor.Select();
                 }
-                
+
             }
         }
 
@@ -135,7 +133,7 @@ namespace Proyecto.Formularios.Compras
                     txtcodproducto.BackColor = Color.Honeydew;
                     txtcodproducto.Text = pr.Codigo;
                     txtproducto.Text = pr.Descripcion;
-                    _producto = pr;txtprecioventa.Text = "";
+                    _producto = pr; txtprecioventa.Text = "";
                     txtpreciocompra.Text = "";
                     txtcantidad.Value = 1;
                     txtcantidad.Select();
@@ -174,7 +172,7 @@ namespace Proyecto.Formularios.Compras
 
         private void btnagregarproducto_Click(object sender, EventArgs e)
         {
-         
+
             if (_producto == null)
             {
                 MessageBox.Show("Debe ingresar un producto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -272,7 +270,7 @@ namespace Proyecto.Formularios.Compras
 
         private void btnCrearCompra_Click(object sender, EventArgs e)
         {
-            
+
             if (txtdocproveedor.Text.Trim() == "")
             {
                 MessageBox.Show("Debe ingresar el documento del proveedor", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

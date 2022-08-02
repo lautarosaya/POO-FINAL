@@ -2,9 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ProyectoVenta.Logica
 {
@@ -29,7 +27,7 @@ namespace ProyectoVenta.Logica
         }
 
 
-        public int reducirStock(int idproducto,int cantidad, out string mensaje)
+        public int reducirStock(int idproducto, int cantidad, out string mensaje)
         {
             mensaje = string.Empty;
             int respuesta = 0;
@@ -45,7 +43,8 @@ namespace ProyectoVenta.Logica
                     cmd.Parameters.Add(new SQLiteParameter("@pidproducto", idproducto));
                     cmd.CommandType = System.Data.CommandType.Text;
                     respuesta = cmd.ExecuteNonQuery();
-                    if (respuesta < 1) {
+                    if (respuesta < 1)
+                    {
                         mensaje = "no se puede reducir stock";
                     }
                 }
@@ -106,7 +105,8 @@ namespace ProyectoVenta.Logica
                     cmd.CommandType = System.Data.CommandType.Text;
                     respuesta = Convert.ToInt32(cmd.ExecuteScalar().ToString());
 
-                    if (respuesta < 1) {
+                    if (respuesta < 1)
+                    {
                         mensaje = "No se pudo generar el correlativo";
                     }
                 }
@@ -204,7 +204,7 @@ namespace ProyectoVenta.Logica
                 {
                     conexion.Open();
                     StringBuilder query = new StringBuilder();
-               
+
                     query.AppendLine("select e.NumeroDocumento,strftime('%d/%m/%Y', date(e.FechaRegistro))[FechaRegistro],e.UsuarioRegistro,");
                     query.AppendLine("e.DocumentoCliente,e.NombreCliente,e.MontoTotal,e.PagoCon,e.Cambio,");
                     query.AppendLine("de.CodigoProducto,de.DescripcionProducto,de.CategoriaProducto,de.MedidaProducto,");
@@ -244,7 +244,7 @@ namespace ProyectoVenta.Logica
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 oLista = new List<VistaVenta>();
             }
@@ -291,7 +291,7 @@ namespace ProyectoVenta.Logica
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 objeto = null;
             }
@@ -335,7 +335,7 @@ namespace ProyectoVenta.Logica
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 oLista = new List<DetalleVenta>();
             }

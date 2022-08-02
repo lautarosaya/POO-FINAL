@@ -1,26 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Net.Mail;
 using System.Text;
-using System.Threading.Tasks;
-using System.Runtime.InteropServices;
-using System.Windows;
-using System.Net;
-using System.Net.Mail;
 namespace Controladora
 {
     public class usuarios1
     {
-        public int identificador (string usuarios, string contrasena) 
+        public int identificador(string usuarios, string contrasena)
         {
-            if(usuarios == "admin" && contrasena == "Osonegro123")
+            if (usuarios == "admin" && contrasena == "Osonegro123")
             {
                 return 1;
             }
             return -1;
         }
 
-        public MailMessage MailVerificar(string usuario_mail, string usuario_nombre, string usuario_apellido,int codigoazar)
+        public MailMessage MailVerificar(string usuario_mail, string usuario_nombre, string usuario_apellido, int codigoazar)
         {
             MailMessage correo = new MailMessage();
 
@@ -66,7 +59,7 @@ namespace Controladora
 
     }
 
-    
+
 
 
 

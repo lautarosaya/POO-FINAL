@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Proyecto.Modelo;
+﻿using Proyecto.Modelo;
 using ProyectoVenta.Logica;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Proyecto.Formularios.Productos
 {
     public partial class frmMantProducto : Form
     {
         public bool _modo_editar { get; set; }
-        public Producto _Producto{ get; set; }
+        public Producto _Producto { get; set; }
         public frmMantProducto()
         {
             InitializeComponent();
@@ -64,7 +58,10 @@ namespace Proyecto.Formularios.Productos
                 _Producto.Medida = txtmedida.Text;
             }
             else
-                _Producto = new Producto() { IdProducto = 0, Codigo = txtcodigo.Text,
+                _Producto = new Producto()
+                {
+                    IdProducto = 0,
+                    Codigo = txtcodigo.Text,
                     Descripcion = txtproducto.Text,
                     Categoria = txtcategoria.Text,
                     Medida = txtmedida.Text

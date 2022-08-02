@@ -43,6 +43,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtclave = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtSee = new FontAwesome.Sharp.IconButton();
+            this.txtSee2 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // lblresultado
@@ -185,6 +187,7 @@
             this.txtconfirmarclave.PasswordChar = '*';
             this.txtconfirmarclave.Size = new System.Drawing.Size(277, 20);
             this.txtconfirmarclave.TabIndex = 5;
+            this.txtconfirmarclave.TextChanged += new System.EventHandler(this.txtconfirmarclave_TextChanged);
             // 
             // label5
             // 
@@ -205,7 +208,7 @@
             this.txtclave.PasswordChar = '*';
             this.txtclave.Size = new System.Drawing.Size(277, 20);
             this.txtclave.TabIndex = 4;
-            this.txtclave.TextChanged += new System.EventHandler(this.txtclave_TextChanged);
+            this.txtclave.TextChanged += new System.EventHandler(this.txtclave_TextChanged_1);
             // 
             // label2
             // 
@@ -218,12 +221,48 @@
             this.label2.TabIndex = 213;
             this.label2.Text = "Contraseña";
             // 
+            // txtSee
+            // 
+            this.txtSee.FlatAppearance.BorderSize = 0;
+            this.txtSee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSee.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.txtSee.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(137)))));
+            this.txtSee.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.txtSee.IconSize = 23;
+            this.txtSee.Location = new System.Drawing.Point(276, 222);
+            this.txtSee.Name = "txtSee";
+            this.txtSee.Size = new System.Drawing.Size(22, 16);
+            this.txtSee.TabIndex = 218;
+            this.txtSee.Tag = "contraseña";
+            this.txtSee.UseVisualStyleBackColor = true;
+            this.txtSee.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSee_MouseClick);
+            // 
+            // txtSee2
+            // 
+            this.txtSee2.FlatAppearance.BorderSize = 0;
+            this.txtSee2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtSee2.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.txtSee2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(137)))));
+            this.txtSee2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.txtSee2.IconSize = 23;
+            this.txtSee2.Location = new System.Drawing.Point(276, 272);
+            this.txtSee2.Name = "txtSee2";
+            this.txtSee2.Size = new System.Drawing.Size(22, 16);
+            this.txtSee2.TabIndex = 219;
+            this.txtSee2.Tag = "contraseña";
+            this.txtSee2.UseVisualStyleBackColor = true;
+            this.txtSee2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.iconButton1_MouseClick);
+            this.txtSee2.MouseEnter += new System.EventHandler(this.iconButton1_MouseEnter);
+            this.txtSee2.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
+            // 
             // frmMantUsuario_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 370);
             this.ControlBox = false;
+            this.Controls.Add(this.txtSee2);
+            this.Controls.Add(this.txtSee);
             this.Controls.Add(this.cborol);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtconfirmarclave);
@@ -270,5 +309,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.Label label2;
+        private FontAwesome.Sharp.IconButton txtSee;
+        private FontAwesome.Sharp.IconButton txtSee2;
     }
 }

@@ -1,20 +1,19 @@
 ﻿using System;
-using System.Windows.Forms;
+using System.Diagnostics;
+using System.IO;
+using System.Net;
+using System.Net.Mail;
 using System.Net.NetworkInformation;
 using System.Security.Cryptography;
 using System.Text;
-using System.Diagnostics;
-using System.IO;
-using System.Net.Mail;
-using System.Net;
-using COMUN;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace COMUN
 {
     static public class MetodosComunes
     {
-        
+
         static public KeyPressEventArgs KeyPressPuntoyComa(KeyPressEventArgs e, string TEXTO)
         {
 
@@ -190,7 +189,7 @@ namespace COMUN
 
             return passEncriptado = sb.ToString();
         }
-        
+
         /// Encripta una cadena
         public static string EncriptarPassBD(string cadenaAencriptar)
         {
@@ -205,7 +204,6 @@ namespace COMUN
         {
             string result = string.Empty;
             byte[] decryted = Convert.FromBase64String(cadenaAdesencriptar);
-            //result = System.Text.Encoding.Unicode.GetString(decryted, 0, decryted.ToArray().Length);
             result = System.Text.Encoding.Unicode.GetString(decryted);
             return result;
         }
@@ -312,7 +310,7 @@ namespace COMUN
             }
             return e;
         }
-        
+
         static public bool ValidacionEMAIL(EventArgs e, string Mail)//validacion formato de direccion de e-mail
         {
 
@@ -327,7 +325,7 @@ namespace COMUN
                 {
                     //no es correcta
                     return false;
-                 }
+                }
                 else
                 {
                     //es correcta
@@ -500,17 +498,17 @@ namespace COMUN
         }
 
         public static int CalcularDigitoCuit(string cuit)
-             {
-                 int[] mult = new[] { 5, 4, 3, 2, 7, 6, 5, 4, 3, 2 };
-                 char[] nums = cuit.ToCharArray();
-                int total = 0;
-                for (int i = 0; i < mult.Length; i++)
-                {
-                    total += int.Parse(nums[i].ToString()) * mult[i];
-                }
-                var resto = total % 11;
-                return resto == 0 ? 0 : resto == 1 ? 9 : 11 - resto;
+        {
+            int[] mult = new[] { 5, 4, 3, 2, 7, 6, 5, 4, 3, 2 };
+            char[] nums = cuit.ToCharArray();
+            int total = 0;
+            for (int i = 0; i < mult.Length; i++)
+            {
+                total += int.Parse(nums[i].ToString()) * mult[i];
             }
+            var resto = total % 11;
+            return resto == 0 ? 0 : resto == 1 ? 9 : 11 - resto;
+        }
 
         public static bool ValidaClavesIguales(string pass, string comprovacion)
         {
@@ -556,7 +554,7 @@ namespace COMUN
                 return true;
             }
         }
-        
+
         #region LOG
 
         static public void RegistrarLog(string mensaje, string especificacion, string ruta)
@@ -600,7 +598,7 @@ namespace COMUN
             CuerpoMail.AppendLine("ESPECIFICACION: " + especificacion);
             CuerpoMail.AppendLine("RUTA: " + ruta);
 
-            
+
             EnviarMail(CuerpoMail, "ERROR");
         }
 
@@ -645,7 +643,7 @@ namespace COMUN
                         break;
                 }
 
-                correoElectronico.Subject = "LOG: "; 
+                correoElectronico.Subject = "LOG: ";
 
                 correoElectronico.To.Add(new MailAddress(mailTo));
                 if (mailTo2 != "") correoElectronico.To.Add(new MailAddress(mailTo2));
@@ -669,7 +667,7 @@ namespace COMUN
 
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return;
             }
@@ -684,7 +682,7 @@ namespace COMUN
             try
             {
                 req = (System.Net.HttpWebRequest)
-                    //probar con destelnorte.com.ar
+                //probar con destelnorte.com.ar
                 System.Net.WebRequest.Create(@"http://google.com ");
 
                 res = (System.Net.HttpWebResponse)req.GetResponse();

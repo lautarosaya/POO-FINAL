@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using COMUN;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using COMUN;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace vista.Login
 {
@@ -16,7 +10,7 @@ namespace vista.Login
     {
         //Developed by Javier Ramírez//
 
-        public CodigoConfirmacion(int codigoazar,string usuario,string mail)
+        public CodigoConfirmacion(int codigoazar, string usuario, string mail)
         {
             InitializeComponent();
             CodigoAzar = codigoazar;
@@ -24,7 +18,7 @@ namespace vista.Login
             Mail = mail;
         }
         int CodigoAzar;
-        string Usuario,Mail;
+        string Usuario, Mail;
         bool confirmacion = false;
 
         //DRAG MOVE, Mover formulario con panel// //Código Descarte, por la dudas se guarda para futuras actualizaciones//
@@ -41,7 +35,7 @@ namespace vista.Login
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         //Fin del código mover (drag)//
 
-               
+
         private void txt1_KeyPress(object sender, KeyPressEventArgs e)
         {
             MetodosComunes.KeyPressSoloNumeros(e);
@@ -54,8 +48,8 @@ namespace vista.Login
 
         private void txt1_TextChanged(object sender, EventArgs e)
         {
-            string codigo = txt1.Text + txt2.Text + txt3.Text + txt4.Text +txt5.Text;        
-            if(codigo == CodigoAzar.ToString())
+            string codigo = txt1.Text + txt2.Text + txt3.Text + txt4.Text + txt5.Text;
+            if (codigo == CodigoAzar.ToString())
             {
                 confirmacion = true;
                 this.Close();
@@ -67,7 +61,9 @@ namespace vista.Login
 
         }
 
+#pragma warning disable IDE1006 // Estilos de nombres
         private void pnlLabel_MouseDown(object sender, MouseEventArgs e)
+#pragma warning restore IDE1006 // Estilos de nombres
         {
             if (e.Button == MouseButtons.Left)
 
@@ -92,14 +88,14 @@ namespace vista.Login
             ICOBack.FlatAppearance.MouseDownBackColor = Color.FromArgb(26, 177, 136);
         }
 
-        
 
-        public void identificadorText(TextBox a,KeyPressEventArgs e)
+
+        public void identificadorText(TextBox a, KeyPressEventArgs e)
         {
             switch (a.TabIndex)
             {
                 case 0:
-                    if(char.IsNumber(e.KeyChar))
+                    if (char.IsNumber(e.KeyChar))
                     {
                         SendKeys.Send("{TAB}");
                     }
@@ -109,7 +105,7 @@ namespace vista.Login
                     {
                         SendKeys.Send("{TAB}");
                     }
-                    if(e.KeyChar == (char)Keys.Back)
+                    if (e.KeyChar == (char)Keys.Back)
                     {
                         SendKeys.Send("+{TAB}");
                     }

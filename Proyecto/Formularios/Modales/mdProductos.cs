@@ -3,12 +3,7 @@ using Proyecto.Modelo;
 using ProyectoVenta.Logica;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto.Formularios.Modales
@@ -79,7 +74,8 @@ namespace Proyecto.Formularios.Modales
             {
                 if (dgvdata.Columns[e.ColumnIndex].Name == "btnseleccionar")
                 {
-                    _Producto = new Producto() {
+                    _Producto = new Producto()
+                    {
                         IdProducto = Convert.ToInt32(dgvdata.Rows[index].Cells["Id"].Value.ToString()),
                         Codigo = dgvdata.Rows[index].Cells["Codigo"].Value.ToString(),
                         Descripcion = dgvdata.Rows[index].Cells["Producto"].Value.ToString(),
@@ -92,9 +88,9 @@ namespace Proyecto.Formularios.Modales
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }
-                
+
             }
-            
+
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)

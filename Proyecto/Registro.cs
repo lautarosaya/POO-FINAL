@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Net;
-using System.Net.Mail;
-using COMUN;
-using Proyecto.Herrarmientas;
+﻿using COMUN;
 using Proyecto.Modelo;
 using ProyectoVenta.Logica;
+using System;
+using System.Drawing;
+using System.Net.Mail;
+using System.Windows.Forms;
 
 
 namespace vista.Login
@@ -491,7 +483,6 @@ namespace vista.Login
                         pctLineDecoration(pctNombre, 3);
                         return false;
                     }
-                    break;
                 case 1:
                     if (a.Text != Apellidotxt && a.ForeColor != Color.Silver)
                     {
@@ -502,7 +493,6 @@ namespace vista.Login
                         pctLineDecoration(pctApellido, 3);
                         return false;
                     }
-                    break;
                 case 2:
                     if (a.Text != Usuariotxt && a.ForeColor != Color.Silver)
                     {
@@ -521,7 +511,6 @@ namespace vista.Login
                         pctLineDecoration(pctUsuario, 3);
                         return false;
                     }
-                    break;
                 case 3:
                     if (a.Text != "Contraseña" && a.ForeColor != Color.Silver)
                     {
@@ -540,7 +529,6 @@ namespace vista.Login
                         pctLineDecoration(pctContraseña, 3);
                         return false;
                     }
-                    break;
                 case 4:
                     if (a.Text != Correotxt && a.ForeColor != Color.Silver)
                     {
@@ -560,13 +548,10 @@ namespace vista.Login
                         pctLineDecoration(pctCorreo, 3);
                         return false;
                     }
-                    break;
                 default:
                     MessageBox.Show("Error");
                     return false;
-                    break;
             }
-            return false;
         }
     }
 }

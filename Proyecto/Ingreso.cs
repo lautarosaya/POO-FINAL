@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using COMUN;
 using Proyecto.Modelo;
 using ProyectoVenta.Logica;
-using System.ComponentModel;
+using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using COMUN;
 
 
 
@@ -33,7 +30,7 @@ namespace vista
         Color greenLeave = Color.FromArgb(65, 168, 95);
         Color pctOn = Color.FromArgb(65, 168, 95);
         Color pctOff = Color.DarkGray;
-        
+
         //DRAG MOVE, Mover formulario con panel// //Código Descarte, por la dudas se guarda para futuras actualizaciones//
         public const int WM_NCLBUTTONDOWN = 0xA1;
 
@@ -59,22 +56,22 @@ namespace vista
 
         }*/
 
-    private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            
+
             //GetPasswordChar
             passwordchar = txtContraseña.PasswordChar;
             btnLoginLO.FlatAppearance.MouseOverBackColor = greenHoover;
             btnIniciar.FlatAppearance.MouseOverBackColor = greenHoover;
             btnRegistrarLO.FlatAppearance.MouseOverBackColor = grisHoover;
-            txtSee.Visible = false;            
+            txtSee.Visible = false;
         }
 
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
             placeholder(txtUsuario, 1, Usuariotxt);
-            pctLineDecoration(pctUsuario, 1);      
-            
+            pctLineDecoration(pctUsuario, 1);
+
         }
 
         private void txtUsuario_Leave(object sender, EventArgs e)
@@ -85,16 +82,16 @@ namespace vista
 
         private void txtContraseña_Enter(object sender, EventArgs e)
         {
-            if(txtContraseña.Text == "Contraseña")
+            if (txtContraseña.Text == "Contraseña")
             {
                 passwordCHAR(1);
             }
-            if(txtContraseña.Text != String.Empty && passwordEyeON == false)
+            if (txtContraseña.Text != String.Empty && passwordEyeON == false)
             {
                 passwordCHAR(3);
                 passwordCHAR(7);
             }
-            if(txtContraseña.Text != String.Empty && passwordEyeON == true)
+            if (txtContraseña.Text != String.Empty && passwordEyeON == true)
             {
                 passwordCHAR(3);
                 passwordCHAR(6);
@@ -107,7 +104,7 @@ namespace vista
         {
             if (txtContraseña.Text != String.Empty)
             {
-                if(txtContraseña.ForeColor == Color.Silver)
+                if (txtContraseña.ForeColor == Color.Silver)
                 {
                     passwordCHAR(4);
                 }
@@ -115,18 +112,18 @@ namespace vista
                 {
                     passwordCHAR(3);
                 }
-                
+
             }
         }
 
-        
+
         private void txtContraseña_Leave(object sender, EventArgs e)
         {
             if (txtContraseña.Text == "")
             {
                 passwordCHAR(2);
-            }          
-        
+            }
+
             if (txtContraseña.Text != String.Empty && passwordEyeON == true)
             {
                 passwordCHAR(3);
@@ -144,7 +141,7 @@ namespace vista
 
         private void btnRegistrarRE_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Frm_Closing(object sender, FormClosingEventArgs e)
@@ -172,7 +169,7 @@ namespace vista
             {
 
                 List<Usuario> ouser = UsuarioLogica.Instancia.Listar(out mensaje);
-                encontrado = ouser.Any(u => u.NombreUsuario == txtUsuario.Text && u.Clave == MetodosComunes.EncriptarPassBD (txtContraseña.Text));
+                encontrado = ouser.Any(u => u.NombreUsuario == txtUsuario.Text && u.Clave == MetodosComunes.EncriptarPassBD(txtContraseña.Text));
 
                 if (encontrado)
                 {
@@ -211,9 +208,9 @@ namespace vista
             this.Location = registroFORM.locationchanged();
             //El programa se cerrará cuando el usuario cierre el formulario Registro//
             this.Show();
-                                 
+
         }
-     
+
         private void btnRegistrarLO_MouseLeave(object sender, EventArgs e)
         {
             btnRegistrarLO.ForeColor = Color.DimGray;
@@ -257,7 +254,7 @@ namespace vista
                     {
                         a.Text = "";
                         a.ForeColor = Color.Black;
-                        
+
                     }
                     break;
 
@@ -266,7 +263,7 @@ namespace vista
                     {
                         a.Text = varText;
                         a.ForeColor = Color.Silver;
-                        
+
                     }
                     break;
 
@@ -278,20 +275,20 @@ namespace vista
 
         public void passwordCHAR(int caso)
         {
-            
+
             switch (caso)
             {
                 case 1:
                     txtContraseña.Text = "";
                     txtContraseña.PasswordChar = '*';
                     txtContraseña.ForeColor = Color.Black;
-                    
+
                     break;
                 case 2:
                     txtContraseña.Text = "Contraseña";
                     txtContraseña.PasswordChar = passwordchar;
                     txtContraseña.ForeColor = Color.Silver;
-                    
+
                     break;
                 case 3:
                     txtSee.Visible = true;
@@ -321,12 +318,12 @@ namespace vista
         private void txtSee_MouseEnter(object sender, EventArgs e)
         {
             txtSee.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            
+
         }
 
         private void txtSee_MouseLeave(object sender, EventArgs e)
-        {          
-            txtSee.IconFont = FontAwesome.Sharp.IconFont.Auto;                      
+        {
+            txtSee.IconFont = FontAwesome.Sharp.IconFont.Auto;
         }
 
         private void txtSee_MouseClick(object sender, MouseEventArgs e)
@@ -334,12 +331,12 @@ namespace vista
             if (txtSee.IconChar == FontAwesome.Sharp.IconChar.Eye)
             {
                 txtSee.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-                passwordEyeON = true;               
+                passwordEyeON = true;
                 passwordCHAR(6);
             }
             else
             {
-                if(txtSee.IconChar == FontAwesome.Sharp.IconChar.EyeSlash)
+                if (txtSee.IconChar == FontAwesome.Sharp.IconChar.EyeSlash)
                 {
                     txtSee.IconChar = FontAwesome.Sharp.IconChar.Eye;
                     passwordEyeON = false;
@@ -353,9 +350,9 @@ namespace vista
 
         private void btnLoginLO_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(e.KeyChar == Convert.ToChar(Keys.Enter))
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
-                btnLoginLO_Click(sender, e);           
+                btnLoginLO_Click(sender, e);
             }
         }
     }

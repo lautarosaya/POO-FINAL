@@ -3,13 +3,10 @@ using Proyecto.Modelo;
 using ProyectoVenta.Logica;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto.Formularios.Ventas
@@ -48,7 +45,8 @@ namespace Proyecto.Formularios.Ventas
                     txtnombrecliente.Text = objeto.NombreCompleto;
                     txtcodproducto.Select();
                 }
-                else {
+                else
+                {
                     txtdoccliente.Select();
                 }
             }
@@ -95,7 +93,8 @@ namespace Proyecto.Formularios.Ventas
                     txtstock.Text = _producto.Stock.ToString();
                     txtcantidad.Select();
                 }
-                else {
+                else
+                {
                     txtcodproducto.Select();
                 }
             }
@@ -306,7 +305,7 @@ namespace Proyecto.Formularios.Ventas
                 return;
             }
 
-            
+
 
             foreach (DataGridViewRow row in dgvdata.Rows)
             {
@@ -339,7 +338,7 @@ namespace Proyecto.Formularios.Ventas
                 Cambio = Convert.ToDecimal(txtcambio.Text.Trim()).ToString("0.00"),
                 olistaDetalle = olista
             };
-            
+
 
             int operaciones = VentaLogica.Instancia.Registrar(oSalida, out mensaje);
 
@@ -389,15 +388,17 @@ namespace Proyecto.Formularios.Ventas
 
         private void calcularcambio()
         {
-            if (txttotalpagar.Text.Trim() == "") {
+            if (txttotalpagar.Text.Trim() == "")
+            {
                 MessageBox.Show("No existen productos en la venta", "Mensaje C.E.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return ;
+                return;
             }
-            
+
             decimal pagacon;
             decimal total = Convert.ToDecimal(txttotalpagar.Text, new CultureInfo("es-PE"));
 
-            if (txtpagocon.Text.Trim() == "") {
+            if (txtpagocon.Text.Trim() == "")
+            {
                 txtpagocon.Text = "0";
             }
 
@@ -411,7 +412,7 @@ namespace Proyecto.Formularios.Ventas
                 }
                 else
                 {
-                    decimal cambio =  pagacon -total;
+                    decimal cambio = pagacon - total;
                     txtcambio.Text = cambio.ToString("0.00", new CultureInfo("es-PE"));
                 }
             }

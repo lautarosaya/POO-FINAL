@@ -2,9 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ProyectoVenta.Logica
 {
@@ -132,7 +130,7 @@ namespace ProyectoVenta.Logica
                             de.SubTotal
                             ));
 
-                        query.AppendLine(string.Format("UPDATE PRODUCTO set PrecioCompra = '{0}', PrecioVenta = '{1}', Stock = (Stock + {2}) where IdProducto = {3};",de.PrecioCompra,de.PrecioVenta,de.Cantidad,de.IdProducto));
+                        query.AppendLine(string.Format("UPDATE PRODUCTO set PrecioCompra = '{0}', PrecioVenta = '{1}', Stock = (Stock + {2}) where IdProducto = {3};", de.PrecioCompra, de.PrecioVenta, de.Cantidad, de.IdProducto));
                     }
 
                     query.AppendLine("DROP TABLE _TEMP;");
@@ -212,7 +210,7 @@ namespace ProyectoVenta.Logica
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 oLista = new List<VistaCompra>();
             }
@@ -257,8 +255,7 @@ namespace ProyectoVenta.Logica
                     }
                 }
             }
-            catch (Exception ex)
-            {
+            catch (Exception)            {
                 objeto = null;
             }
             return objeto;
@@ -302,7 +299,7 @@ namespace ProyectoVenta.Logica
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 oLista = new List<DetalleCompra>();
             }
