@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using COMUN;
 
 namespace Proyecto.Formularios.Mantenimiento
 {
@@ -50,8 +51,8 @@ namespace Proyecto.Formularios.Mantenimiento
                     encontrado++;
                 }
                 cborol.SelectedIndex = encontrado;
-                txtclave.Text = _Usuario.Clave;
-                txtconfirmarclave.Text = _Usuario.Clave;
+                txtclave.Text = COMUN.MetodosComunes.DesEncriptarPassBD(_Usuario.Clave);
+                txtconfirmarclave.Text = COMUN.MetodosComunes.DesEncriptarPassBD(_Usuario.Clave);
             }
         }
 
@@ -94,7 +95,7 @@ namespace Proyecto.Formularios.Mantenimiento
                 _Usuario.NombreCompleto = txtnombre.Text;
                 _Usuario.IdPermisos = Convert.ToInt32(((OpcionCombo)cborol.SelectedItem).Valor.ToString());
                 _Usuario.Descripcion = ((OpcionCombo)cborol.SelectedItem).Texto.ToString();
-                _Usuario.Clave = txtclave.Text;
+                _Usuario.Clave = MetodosComunes.EncriptarPassBD(txtclave.Text);
             }
             else
                 _Usuario = new Usuario() { IdUsuario = 0,
@@ -102,7 +103,7 @@ namespace Proyecto.Formularios.Mantenimiento
                     NombreCompleto = txtnombre.Text,
                     IdPermisos = Convert.ToInt32(((OpcionCombo)cborol.SelectedItem).Valor.ToString()),
                     Descripcion = ((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
-                    Clave = txtclave.Text
+                    Clave = MetodosComunes.EncriptarPassBD(txtclave.Text)
                 };
 
             int existe = UsuarioLogica.Instancia.Existe(_Usuario.NombreUsuario, _Usuario.IdUsuario, out mensaje);
@@ -143,6 +144,11 @@ namespace Proyecto.Formularios.Mantenimiento
                 }
 
             }
+        }
+
+        private void txtclave_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

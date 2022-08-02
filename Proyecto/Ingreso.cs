@@ -172,11 +172,11 @@ namespace vista
             {
 
                 List<Usuario> ouser = UsuarioLogica.Instancia.Listar(out mensaje);
-                encontrado = ouser.Any(u => u.NombreUsuario == txtUsuario.Text && u.Clave == MetodosComunes.Encriptar(txtContraseña.Text));
+                encontrado = ouser.Any(u => u.NombreUsuario == txtUsuario.Text && u.Clave == MetodosComunes.EncriptarPassBD (txtContraseña.Text));
 
                 if (encontrado)
                 {
-                    Usuario objuser = ouser.Where(u => u.NombreUsuario == txtUsuario.Text && u.Clave == MetodosComunes.Encriptar (txtContraseña.Text)).FirstOrDefault();
+                    Usuario objuser = ouser.Where(u => u.NombreUsuario == txtUsuario.Text && u.Clave == MetodosComunes.EncriptarPassBD(txtContraseña.Text)).FirstOrDefault();
 
                     Proyecto.Inicio frm = new Proyecto.Inicio();
                     frm.NombreUsuario = objuser.NombreUsuario;

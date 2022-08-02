@@ -61,11 +61,7 @@
             // 
             this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
-
-            this.btncerrar.IconColor = System.Drawing.Color.Red;
-
             this.btncerrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-
             this.btncerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncerrar.IconSize = 20;
             this.btncerrar.Location = new System.Drawing.Point(174, 325);
@@ -83,11 +79,7 @@
             // 
             this.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnguardar.IconChar = FontAwesome.Sharp.IconChar.Save;
-
-            this.btnguardar.IconColor = System.Drawing.Color.Teal;
-
             this.btnguardar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-
             this.btnguardar.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnguardar.IconSize = 17;
             this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -152,11 +144,7 @@
             // 
             // label1
             // 
-
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(156)))), ((int)(((byte)(114)))));
-
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -217,6 +205,7 @@
             this.txtclave.PasswordChar = '*';
             this.txtclave.Size = new System.Drawing.Size(277, 20);
             this.txtclave.TabIndex = 4;
+            this.txtclave.TextChanged += new System.EventHandler(this.txtclave_TextChanged);
             // 
             // label2
             // 
