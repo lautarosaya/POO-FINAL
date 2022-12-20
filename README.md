@@ -1,21 +1,5 @@
 # Sistema de Ventas
 
-<p align="center">
-<img src="http://www.cioal.com/wp-content/uploads/Softltam-Logo.jpg">
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-2.2-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/htr-tech/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/htr-tech/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/htr-tech/zphisher?color=red&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/htr-tech/zphisher?color=teal&style=for-the-badge">
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Open%20Source-Yes-cyan?style=flat-square">
-</p>
-
 <h2>Sobre nosotros</h2>
 <p>Este un software destinado para cualquier tipo de negocios, desarrollado con una base de datos portable y un sistema de Registro y Login, el sistema cuenta con una interfaz moderna y minimalista, también posee confirmación de correo electronico a partir de un código númerico generado aleatoriamente</p>
 
@@ -37,7 +21,7 @@ Nuestra idea es fácilitar al cliente en el registro de operaciones y control de
 
 ### Instalación 
 
-- Simplemente, clone el repositorio. (no es tan dificil...) -
+- Simplemente, clone el repositorio.-
 ```
 $ git clone https://github.com/lautarosaya/POO-FINAL.git
 ```
